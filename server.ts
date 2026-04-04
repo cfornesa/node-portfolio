@@ -13,7 +13,7 @@ async function main() {
     console.log(
       `Agentic Tools listening on port ${port}${appUrl ? ` (${appUrl})` : ''}`,
     );
-    console.log(`  /         → Home & Portfolio Assistant`);
+    console.log(`  /chat         → Ask Chris`);
     console.log(`  /resume   → Resume Editor`);
     console.log(`  /art      → Art Inspiration Agent`);
     console.log(`  /tanaga   → Tanaga Poetry Agent`);

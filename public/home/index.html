@@ -23,7 +23,7 @@
         <div class="header-content">
             <a href="/" class="header-brand">
                 <span class="material-symbols-outlined brand-icon">auto_awesome</span>
-                <span class="brand-name">Agentic Tools</span>
+                <span class="brand-name">Chris.com.ph</span>
             </a>
             <nav class="header-nav">
                 <a href="/chat" class="nav-link nav-link--active">Ask Chris</a>
@@ -44,55 +44,20 @@
 
     <main class="app-main">
 
-        <!-- ── Hero ─────────────────────────────────────────────── -->
-        <section class="hero">
-            <div class="hero-text">
-                <h1 class="hero-heading">Agentic Tools</h1>
-                <p class="hero-sub">Three AI-powered tools in one place. Ask the assistant below for guidance, or open a tool directly.</p>
-            </div>
-            <div class="tool-cards">
-
-                <a href="/resume" class="tool-card">
-                    <div class="tool-card-icon">
-                        <span class="material-symbols-outlined">description</span>
-                    </div>
-                    <div class="tool-card-body">
-                        <p class="tool-card-title">Resume Editor</p>
-                        <p class="tool-card-desc">Build a high-impact resume with AI, then refine it through conversation.</p>
-                    </div>
-                    <span class="tool-card-arrow material-symbols-outlined">arrow_forward</span>
-                </a>
-
-                <a href="/art" class="tool-card">
-                    <div class="tool-card-icon">
-                        <span class="material-symbols-outlined">palette</span>
-                    </div>
-                    <div class="tool-card-body">
-                        <p class="tool-card-title">Art Inspiration</p>
-                        <p class="tool-card-desc">Explore techniques, styles, and mediums with a studio-grade art assistant.</p>
-                    </div>
-                    <span class="tool-card-arrow material-symbols-outlined">arrow_forward</span>
-                </a>
-
-                <a href="/tanaga" class="tool-card">
-                    <div class="tool-card-icon">
-                        <span class="material-symbols-outlined">history_edu</span>
-                    </div>
-                    <div class="tool-card-body">
-                        <p class="tool-card-title">Tanaga Agent</p>
-                        <p class="tool-card-desc">Compose traditional Filipino Tanaga poetry with strict meter validation.</p>
-                    </div>
-                    <span class="tool-card-arrow material-symbols-outlined">arrow_forward</span>
-                </a>
-
+        <!-- ── Ask Chris Assistant Chat ──────────────────────────── -->
+        <section id="welcomeScreen" class="welcome-screen">
+            <h2 class="welcome-heading">Ask Chris Agent</h2>
+            <div class="welcome-body">
+                <p class="welcome-text">Fill in your professional details and I'll build a complete, high-impact resume using the STAR method — with zero embellishment.</p>
+                <p class="welcome-text">Once your resume is generated, fine-tune any section through conversation.</p>
+                <p class="welcome-attribution">Powered by <a href="https://mistral.ai" target="_blank">Mistral AI</a>.</p>
             </div>
         </section>
-
-        <!-- ── Ask Chris Assistant Chat ──────────────────────────── -->
+        
         <section class="home-chat-section">
             <div class="section-label">
                 <span class="material-symbols-outlined section-label-icon">forum</span>
-                <span class="section-label-text">Ask Chris Assistant</span>
+                <span class="section-label-text">Ask Chris Agent</span>
             </div>
 
             <section class="chat-panel">
@@ -101,7 +66,7 @@
                         <span class="material-symbols-outlined">smart_toy</span>
                     </div>
                     <div class="chat-identity">
-                        <p class="chat-name">Ask Chris Assistant</p>
+                        <p class="chat-name">Ask Chris Agent</p>
                         <p class="chat-status">Ask me anything</p>
                     </div>
                 </div>
@@ -150,6 +115,59 @@
                     <p class="chat-footer-text">Ask Chris Assistant &bull; Powered by Mistral AI</p>
                 </div>
             </section>
+        </section>
+
+
+        <!-- Empty hero section to match the layout of other pages -->
+        <section class="hero" style="margin-top: 3rem;">
+            <div class="hero-text">
+                <p class="hero-sub">&nbsp;</p>
+            </div>
+        </section>
+
+        
+        <!-- ── Hero ─────────────────────────────────────────────── -->
+        
+        <section class="hero">
+            <div class="hero-text">
+                <p class="hero-sub">Try out a few of the other AI-powered tools that I created using Mistral Small 4.</p>
+            </div>
+            <div class="tool-cards">
+
+                <a href="/resume" class="tool-card">
+                    <div class="tool-card-icon">
+                        <span class="material-symbols-outlined">description</span>
+                    </div>
+                    <div class="tool-card-body">
+                        <p class="tool-card-title">Resume Editor</p>
+                        <p class="tool-card-desc">Build a high-impact resume with AI, then refine it through conversation.</p>
+                    </div>
+                    <span class="tool-card-arrow material-symbols-outlined">arrow_forward</span>
+                </a>
+
+                <a href="/art" class="tool-card">
+                    <div class="tool-card-icon">
+                        <span class="material-symbols-outlined">palette</span>
+                    </div>
+                    <div class="tool-card-body">
+                        <p class="tool-card-title">Art Inspiration</p>
+                        <p class="tool-card-desc">Explore techniques, styles, and mediums with a studio-grade art assistant.</p>
+                    </div>
+                    <span class="tool-card-arrow material-symbols-outlined">arrow_forward</span>
+                </a>
+
+                <a href="/tanaga" class="tool-card">
+                    <div class="tool-card-icon">
+                        <span class="material-symbols-outlined">history_edu</span>
+                    </div>
+                    <div class="tool-card-body">
+                        <p class="tool-card-title">Tanaga Agent</p>
+                        <p class="tool-card-desc">Compose traditional Filipino Tanaga poetry with strict meter validation.</p>
+                    </div>
+                    <span class="tool-card-arrow material-symbols-outlined">arrow_forward</span>
+                </a>
+
+            </div>
         </section>
 
     </main>

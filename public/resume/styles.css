@@ -1,4 +1,111 @@
-/* Resume-specific layout extensions */
+/* ── Hero Section ───────────────────────────────────────────── */
+.hero {
+    margin-bottom: 3rem;
+}
+
+.hero-text {
+    margin-bottom: 2rem;
+}
+
+.hero-sub {
+    color: var(--on-surface-variant);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    max-width: 48rem;
+}
+
+/* ── Tool Cards ─────────────────────────────────────────────── */
+.tool-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+}
+
+.tool-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+    background: var(--surface-container-low);
+    border: 1px solid var(--outline-variant);
+    border-radius: 0.75rem;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.2s, background 0.2s, transform 0.15s;
+    cursor: pointer;
+}
+
+.tool-card:hover {
+    border-color: rgba(255, 204, 0, 0.4);
+    background: var(--surface-container);
+    transform: translateY(-2px);
+    opacity: 1;
+}
+
+.tool-card-icon {
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 0.625rem;
+    background: rgba(255, 204, 0, 0.1);
+    border: 1px solid rgba(255, 204, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.tool-card-icon .material-symbols-outlined {
+    color: var(--primary);
+    font-size: 1.25rem;
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+
+.tool-card-body {
+    flex: 1;
+    min-width: 0;
+}
+
+.tool-card-title {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: var(--on-surface);
+    margin-bottom: 0.25rem;
+}
+
+.tool-card-desc {
+    font-size: 0.8125rem;
+    color: var(--on-surface-variant);
+    line-height: 1.5;
+}
+
+.tool-card-arrow {
+    color: var(--on-surface-variant);
+    font-size: 1.125rem;
+    flex-shrink: 0;
+    opacity: 0.4;
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+.tool-card:hover .tool-card-arrow {
+    opacity: 1;
+    color: var(--primary);
+    transform: translateX(3px);
+}
+
+/* Welcome layout extensions */
+
+.welcome-heading {
+    font-size: clamp(1rem, 5vw, 4rem);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 1.1;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--on-surface-variant) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+}
 
 .welcome-screen {
     display: flex;
@@ -7,11 +114,6 @@
     flex-wrap: wrap;
     gap: 1.5rem;
     margin-bottom: 3rem;
-}
-
-.welcome-heading {
-    flex-shrink: 0;
-    max-width: 18ch;
 }
 
 .welcome-body {
@@ -37,6 +139,8 @@
 .form-panel-wrapper:has(#buildForm[style*="display: none"]) ~ .chat-panel {
     grid-column: 1 / -1;
 }
+
+/* Tablet and mobile ────────────────────────────────────────────────────────── */
 
 @media (max-width: 1023px) {
     .content-grid { grid-template-columns: 1fr; }
