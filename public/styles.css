@@ -697,7 +697,9 @@ a:hover { opacity: 0.75; }
     display: flex;
     align-items: center;
     gap: 0.625rem;
-    margin-bottom: 0.625rem;
+    padding-bottom: 0.75rem;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid var(--outline-variant);
 }
 
 .language-label {
