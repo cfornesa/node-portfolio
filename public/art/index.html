@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Inspiration — Agentic Tools</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/art/styles.css">
+</head>
+<body>
+
+    <header class="app-header">
+        <div class="header-content">
+            <a href="/" class="header-brand">
+                <span class="material-symbols-outlined brand-icon">auto_awesome</span>
+                <span class="brand-name">Agentic Tools</span>
+            </a>
+            <nav class="header-nav">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/resume" class="nav-link">Resume Editor</a>
+                <a href="/art" class="nav-link nav-link--active">Art Inspiration</a>
+                <a href="/tanaga" class="nav-link">Tanaga Agent</a>
+            </nav>
+            <button id="clearBtn" class="clear-btn" style="display: none;">
+                <span class="material-symbols-outlined">delete</span>
+                <span>Clear</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="app-main art-layout">
+
+        <section class="chat-panel">
+
+            <div class="chat-panel-header">
+                <div class="chat-avatar">
+                    <span class="material-symbols-outlined">palette</span>
+                </div>
+                <div class="chat-identity">
+                    <p class="chat-name">Art Inspiration Agent</p>
+                    <p class="chat-status">Studio Open</p>
+                </div>
+            </div>
+
+            <!-- Welcome Screen -->
+            <div id="welcomeScreen" class="welcome-screen-chat">
+                <div class="welcome-icon-sm">
+                    <span class="material-symbols-outlined">palette</span>
+                </div>
+                <h2 class="welcome-title-sm">Art Inspiration Agent</h2>
+                <p class="welcome-text">Share a creative idea or ask for help with a technique, medium, or style. Fine-tune responses using the preference controls below.</p>
+                <p class="welcome-text" style="margin-top: 0.5rem;">References: Christopher Gildow's <a href="https://drive.google.com/drive/u/0/folders/0B9nrmpuRmC4ETHE5NzNQWnhmbmc?resourcekey=0-66DESs2_nefkpDJzKW-v3w" target="_blank">Art Appreciation</a> course and <a href="https://human.libretexts.org/Bookshelves/Art/Book%3A_Introduction_to_Art_-_Design_Context_and_Meaning_(Sachant_et_al.)" target="_blank">Introduction to Art</a> by Sachant et al.</p>
+                <p class="welcome-attribution" style="margin-top: 0.75rem;">Powered by <a href="https://mistral.ai" target="_blank">Mistral AI</a>.</p>
+            </div>
+
+            <div id="messagesContainer" class="messages-container"></div>
+
+            <div id="loadingIndicator" class="loading-indicator" style="display: none;">
+                <div class="loading-pill">
+                    <div class="loading-dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <span class="loading-text">Consulting the studio&hellip;</span>
+                </div>
+            </div>
+
+            <div id="messagesEnd"></div>
+
+            <div class="chat-input-area">
+                <form id="chatForm" autocomplete="off">
+
+                    <!-- Preference Controls -->
+                    <div class="preferences-bar">
+                        <div class="pref-group">
+                            <label class="pref-label" for="styleSelect">Style</label>
+                            <select id="styleSelect" class="pref-select">
+                                <option value="">Any</option>
+                                <option value="impressionist">Impressionist</option>
+                                <option value="abstract">Abstract</option>
+                                <option value="realist">Realist</option>
+                                <option value="surrealist">Surrealist</option>
+                                <option value="expressionist">Expressionist</option>
+                                <option value="minimalist">Minimalist</option>
+                            </select>
+                        </div>
+                        <div class="pref-group">
+                            <label class="pref-label" for="mediumSelect">Medium</label>
+                            <select id="mediumSelect" class="pref-select">
+                                <option value="">Any</option>
+                                <option value="oil paint">Oil Paint</option>
+                                <option value="watercolor">Watercolor</option>
+                                <option value="acrylic">Acrylic</option>
+                                <option value="charcoal">Charcoal</option>
+                                <option value="pencil">Pencil</option>
+                                <option value="digital">Digital</option>
+                                <option value="mixed media">Mixed Media</option>
+                            </select>
+                        </div>
+                        <div class="pref-group">
+                            <label class="pref-label" for="skillSelect">Level</label>
+                            <select id="skillSelect" class="pref-select">
+                                <option value="">Any</option>
+                                <option value="beginner">Beginner</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                            </select>
+                        </div>
+                        <div class="pref-group">
+                            <label class="pref-label" for="focusSelect">Focus</label>
+                            <select id="focusSelect" class="pref-select">
+                                <option value="">Any</option>
+                                <option value="color theory">Color Theory</option>
+                                <option value="composition">Composition</option>
+                                <option value="texture">Texture</option>
+                                <option value="light and shadow">Light &amp; Shadow</option>
+                                <option value="perspective">Perspective</option>
+                                <option value="form">Form</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Input Row -->
+                    <div class="chat-form input-row">
+                        <textarea
+                            id="messageInput"
+                            class="message-textarea"
+                            placeholder="Describe your creative idea or ask about a technique…"
+                            rows="1"
+                        ></textarea>
+                        <button type="submit" id="sendButton" class="send-button" disabled>
+                            <svg id="sendIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22,2 15,22 11,13 2,9 22,2"></polygon>
+                            </svg>
+                            <div id="loadingSpinner" class="btn-spinner" style="display: none;"></div>
+                        </button>
+                    </div>
+
+                </form>
+                <p class="chat-footer-text">Art Inspiration Agent &bull; Powered by Mistral AI</p>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="/art/script.js"></script>
+</body>
+</html>

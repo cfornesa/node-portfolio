@@ -1,0 +1,86 @@
+﻿Christopher Fornesa   
+ cfornes@wgu.edu  346-762-3020  Houston, TX 
+Professional Summary 
+Data and analytics professional with over five years of experience leveraging data to drive strategic decision making. Proficient in quantitative analysis and skilled in transforming complex data into valuable insights. Demonstrated ability to effectively manage large datasets and drive solutions to complex problems. Strong commitment to ethical, data-driven decision-making to support organizational goals and initiatives. 
+Experience 
+Chevron | Mobile Data SME May 2024 to July 2025 ONSITE REMOTE FULL-TIME 
+Developed data solutions analyzing 60,000+ records to identify inactive lines to lower costs. Built 30+ Power BI dashboards to improve decision speed by 60% and cut costs. 
+Managed GETS/WPS data to ensure uptime for emergent situations like Hurricane Beryl. Identified 1,000+ inactive GETS/WPS users through analysis, eliminating security risks. Optimized SharePoint architecture, reducing storage needs by 20% through folder removals. Drafted documentation for automating processes and creating SharePoint resources. 
+Chevorn | IT Analyst March 2020 to December 2020 ONSITE REMOTE FULL-TIME 
+Implemented improvements to enterprise mobility processes, increasing efficiencies. Managed a new enterprise mobility support network to increase social cohesion. 
+Led enterprise mobility meetings to assist the mobility lead in facilitating knowledge transfer. Created the first enterprise mobility Power BI dashboard, revealing active/inactive line ratios. Designed a SharePoint template for Network Product Line retrospectives. 
+Education 
+MS in Data Science 
+Boston University - Boston, MA 
+Advanced coursework in applied statistics and modeling. 
+Hands-on experience with Python, R, and SQL for real-world data analysis. Focus on responsible AI, fairness, and transparent communication. 
+BA in Liberal Studies 
+University of Houston - Houston, TX 
+Awarded: January 2026 Awarded: May 2018 
+Interdisciplinary curriculum including minors in Business Foundations, Political Science, and Studio Art Developed analytical, critical-thinking, and writing skills 
+Certificate in Corporate Entrepreneurship University of Houston - Houston, TX 
+August 2016 to December 2016 
+Entrepreneurship skills acquired from the Bauer School of Business at the University of Houston Applicable in corporate, startup, and nonprofit settings 
+Certificate in Digital Communications Houston Community College - Houston, TX 
+Received training in website development Gained knowledge in content publishing
+Awarded: May 2016 
+AA in Liberal Arts 
+Houston Community College - Houston, TX 
+Gained a cross-disciplinary problem-solving foundation. Skills and Abilities 
+Awarded: May 2015 
+Power BI SPECIALIZED Object-Oriented Programming (OOP) SPECIALIZED Predictive Modeling SPECIALIZED Markup Languages SPECIALIZED 
+Prompt Engineering SPECIALIZED Graphic Communication SPECIALIZED Google Business Intelligence Certificate SPECIALIZED Applied Statistics SPECIALIZED 
+Corporate Entrepreneurship SPECIALIZED Data Science SPECIALIZED 
+Artificial Intelligence Development SPECIALIZED Generative Artificial Intelligence SPECIALIZED Google Data Analytics Certificate SPECIALIZED Political Sciences SPECIALIZED 
+Communication DURABLE Dashboard SPECIALIZED 
+Google Marketing Platform SPECIALIZED Ethical Standards And Conduct DURABLE Data Analysis SPECIALIZED Strategic Decision Making SPECIALIZED Data Ethics SPECIALIZED Machine Learning SPECIALIZED 
+Critical Thinking DURABLE Real World Data SPECIALIZED 
+Content Creation SPECIALIZED Software Engineering SPECIALIZED 
+SQL (Programming Language) SPECIALIZED Liberal Arts SPECIALIZED 
+Knowledge Transfer DURABLE HyperText Markup Language (HTML) SPECIALIZED Quantitative Analysis SPECIALIZED Sprint Retrospectives SPECIALIZED 
+Chatbot SPECIALIZED Responsible AI SPECIALIZED 
+Secure Coding SPECIALIZED R (Programming Language) SPECIALIZED Tableau (Business Intelligence Software) SPECIALIZED Artificial Intelligence SPECIALIZED 
+Decision Making DURABLE Analytics SPECIALIZED 
+Research DURABLE Web Analytics SPECIALIZED 
+Business Intelligence SPECIALIZED Spreadsheets DURABLE 
+Problem Solving DURABLE Web Development SPECIALIZED 
+Software Development SPECIALIZED Writing DURABLE 
+Brainstorming DURABLE Automation SPECIALIZED 
+Web Applications SPECIALIZED Microsoft SharePoint SPECIALIZED 
+Mobile Data SPECIALIZED Digital Communications SPECIALIZED Ethics INTERMEDIATE SOFT Cascading Style Sheets (CSS) IT 
+Google Analytics BEGINNER IT JavaScript (Programming Language) IT Cultural Activities INTERMEDIATE PROFESSIONAL Data Visualization EXPERT IT 
+Python (Programming Language) EXPERT IT Microsoft Excel INTERMEDIATE IT 
+Creativity INTERMEDIATE SOFT 
+Credentials
+  
+
+Google AI Professional Certificate Coursera 
+Awarded: 02/23/2026 
+Those who earn the Google AI Professional Certificate are fluent in AI, and have completed 7 courses demonstrating their ability to apply AI to the skills where AI is transforming work: Brainstorming, Research, Communication, Content Creation, Data Analysis, and coding. They have built a portfolio of 20+ artifacts using AI, and vibe coded a custom AI solution. They prompt effectively, evaluate outputs, and leverage AI tools responsibly to solve real workplace challenges. 
+Google Data Analytics Professional Certificate Coursera 
+Awarded: 02/24/2025   
+Those who earn the Google Data Analytics Certificate, developed by Google, have demonstrated their competence in foundational data analysis. Through hands-on activities and assessments, graduates develop proficiency in preparing, processing, analyzing, and sharing data using tools and platforms including spreadsheets, SQL, Tableau, and R, preparing them for introductory-level roles in data analytics. 
+IBM AI Developer Professional Certificate Coursera 
+Awarded: 03/09/2026   
+This badge earner is prepared for a career in AI development and is equipped with skills to build AI-powered chatbots and apps. The badge earner: understands software engineering principles, core concepts of AI, including generative AI; can apply effective prompt engineering techniques; can create generative AI-driven applications using Python; and deploy them on the web. They can leverage public LLMs and open-source AI models hosted on platforms like IBM watsonx to build AI solutions. 
+Generative AI for Software Developers Specialization Coursera 
+Awarded: 03/09/2026   
+This badge earner can differentiate generative AI from discriminative AI and use generative AI models and tools for text, code, image, audio, and video generation. They can implement generative AI prompt engineering and explain the ethical considerations of using AI in projects. The badge earner has demonstrated their skills to use generative AI tools to perform software development processes including design, coding, and testing effectively and to implement secure coding practices. 
+Google Business Intelligence Certificate Coursera 
+Awarded: 02/24/2025   
+Those who earn the Google Business Intelligence Certificate, developed by Google, have demonstrated their competence in transforming data into actionable insights. Through hands-on activities and assessments, graduates develop proficiency in developing data visualizations and building dashboards that meet stakeholder needs, preparing them for entry-level roles in business intelligence. 
+Google Advanced Data Analytics Certificate Coursera 
+Awarded: 03/17/2025   
+Those who earn the Google Advanced Data Analytics Certificate, developed by Google, have demonstrated their competence in advanced data analysis techniques. Through hands-on activities and assessments, graduates develop proficiency in exploring large datasets, building models to extract insights, machine learning, and predictive modeling, preparing them for advanced roles in data analytics and entry-level roles in data science. 
+IBM AI Developer Professional Certificate Awarded: 2026 Google AI Professional Certificate Awarded: 2026 AI for Creative Work Specialization Awarded: 2026 Vibe Coding Essentials - Build Apps with AI Specialization Awarded: 2026
+Google Business Intelligence Professional Certificate Awarded: 2025 Google Advanced Data Analytics Professional Certificate Awarded: 2025 Google Data Analytics Professional Certificate Awarded: 2025 Academic Honors 
+Summa Cum Laude 
+University of Houston - Houston, TX 
+Awarded: May 2018 
+Earned a perfect 4.0 GPA throughout my applicable coursework at the University of Houston. 
+Highest Honors 
+Houston Community College - Houston, TX 
+Earned a 4.0 GPA upon graduation from Houston Community College/Houston City College. 
+Call to Action for Verification   
+This SmartResume® contains digital badge credentials that can be verified with the institutional issuer(s) in real time. Scan QR code or click here to view this SmartResume® in verifiable form 
+Awarded: May 2015

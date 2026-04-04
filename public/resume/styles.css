@@ -1,0 +1,61 @@
+/* Resume-specific layout extensions */
+
+.welcome-screen {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.welcome-heading {
+    flex-shrink: 0;
+    max-width: 18ch;
+}
+
+.welcome-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding-top: 0.5rem;
+    max-width: 36rem;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+/* Collapse form column when hidden */
+.form-panel-wrapper:has(#buildForm[style*="display: none"]) {
+    display: none;
+}
+
+.form-panel-wrapper:has(#buildForm[style*="display: none"]) ~ .chat-panel {
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 1023px) {
+    .content-grid { grid-template-columns: 1fr; }
+
+    .form-panel-wrapper:has(#buildForm[style*="display: none"]) ~ .chat-panel {
+        grid-column: 1;
+    }
+
+    .welcome-screen {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .welcome-heading {
+        max-width: none;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 639px) {
+    .welcome-heading { font-size: 1.75rem; }
+}

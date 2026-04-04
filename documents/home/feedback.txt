@@ -1,0 +1,285 @@
+Actions	Date	From	Question	Feedback	Sentiment	Feedback Type
+
+
+
+Anytime Feedback Given: on Christopher Fornesa from Miles Switalski on 12/20/2024	12/20/2024	Miles Switalski		"Everyday Excellence: 50 Points ""Chris,
+I want to commend you on a job-well-done this year. Despite the constant change surrounding us, you've continued to maintain a positive mindset all while growing your capabilities and delivering results. Your positivity and optimism are contagious, and I am looking forward to working with you throughout 2025!"" from Culture Cloud"	Positive	Award
+
+
+
+Anytime Feedback Given: on Christopher Fornesa from Juan Carlos Rodriguez on 11/22/2024	11/22/2024	"Employee's Photo (Juan Carlos Rodriguez)
+Juan Carlos Rodriguez"		"Everyday Excellence: 50 Points ""Chris, 
+Thank you for helping learn how to extract data from the data lake and to improve the use of our SharePoint site. 
+You helped address a gap in our information management. 
+Thank you."" from Culture Cloud"	Positive	Award
+
+
+
+Feedback Given: on Christopher Fornesa from Juan Carlos Rodriguez on 11/19/2024	11/19/2024	"Employee's Photo (Juan Carlos Rodriguez)
+
+Juan Carlos Rodriguez"	What is the most impactful work deliverable that I have contributed to the SharePoint reorganization project for the Network Product Line?	"Chris,
+
+Thank you for taking the initiative to create a job aid to help the product owners update their team's section in the NetworkHome site.
+
+You help to create MVP 1 on the next generation home for Network diagrams. Keeping the network diagrams safe and restricting access makes our network reliable.
+
+Please continue to enhance the user experience with the new NetworkHome page."	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Kimberly Walker on 11/18/2024	11/18/2024	Kimberly Walker	How have I grown in my communication and interpersonal skills throughout the time that we have worked together?	Chris excels at keeping everyone informed and engaged with all project details. He is a true team player, making collaboration effortless and enjoyable. Always thinking creatively, he goes above and beyond to ensure tasks are completed successfully. His extensive knowledge greatly enhances our teamwork, fostering a productive environment. Chris is undoubtedly a valuable asset to our company!	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Kimberly Walker on 11/15/2024	11/15/2024	Kimberly Walker	What is my most impactful skill towards my work with you in Chevron Enterprise Mobility?	Chris can easily and quickly put together data from different sources making it possible to find/access information that is needed so the work requiring it, can be accomplished. His moves easily in Power BI and other formats. His understanding of the information and how to accomplish what the task is, makes it easy for everyone!	Positive	Comment
+
+
+
+Anytime Feedback Given: on Christopher Fornesa from Kelley Hengst on 07/02/2024	7/2/2024	Kelley Hengst		Everyday Excellence: 50 Points "Kudos to Chris for working within Chevron security requirements to find a way to allow a key vendor to communicate with us via Teams chat. It elevates a long-standing partnership with a strategic vendor to the next level!" from Culture Cloud	Positive	Award
+
+
+
+Anytime Feedback Given: on Christopher Fornesa from Juan Carlos Rodriguez on 04/03/2024	4/3/2024	"Employee's Photo (Juan Carlos Rodriguez)
+
+Juan Carlos Rodriguez"		"Everyday Excellence: 50 Points ""Chris, 
+Thank you for quickly putting together a job aid on how to update the Network SharePoint site. 
+This will enable the scrum masters and products owner to update our public facing site to address gaps in content."" from Culture Cloud"	Positive	Award
+
+
+
+Feedback Given: on Christopher Fornesa from Letricia Medina on 11/14/2023	11/14/2023	Letricia Medina	Over the course of the past year, in what ways have I contributed positively to planned and unplanned work and projects in which we have worked together?	Chris, throughout this year, you're consistently shown positivity and extended a helpful hand to me, particularly with the Tangoe Mobile Dashboard and assisting with reviewing the training videos. Your guidance and support on various Microsoft tools were invaluable, and you consistently offered tips that greatly benefited the work. Your readiness to address any questions I had has been remarkable. I truly value your kindness and professionalism, and I eagerly anticipate collaborating with you on future projects.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Kelley Hengst on 11/14/2023	11/14/2023	Kelley Hengst	What have been my most impactful accomplishment(s) in working with you, throughout the year, in the Wired Line Space?	Organizing the meetings for the circuit ordering forms in Service Now to integrate with Tangoe's API. The project has taken much longer than anticipated due to a combination of external and internal factors, but we are making progress.	Neutral	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Miles Switalski on 11/01/2023	11/1/2023	Miles Switalski	From your perspective, what is the most significant way that I have grown this year?	"Chris has grown in many areas this year, but the areas I've noticed the most is his openness to change and eagerness to learn about Chevron's core business.
+
+Despite the lack of clarity and uncertainty around being in the office more regularly, Chris has made it his personal mission to strike the correct balance with the hybrid model that works for his personal needs as well as his team's. Not to say Chris hasn't been open to change in the past, however this year I've seen him embrace it and make the most of uncertain situations. I've also witnessed Chris engaging and expressing interest in many of Chevrons business related information sessions, such as the RF CoP and monthly technical deep dive sessions. Chris' natural curiosity about technical subjects makes him well prepared for further technical roles and a pleasure to work with."	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Anestacio Rios on 06/18/2023	6/18/2023	Anestacio Rios	What is one thing I could change that would make a difference for you and what is one thing that currently works?	It would help for me to understand Chris' workload so I can better judge how much more I can put on his plate. With projects, Chris is very detailed and I very much appreciate that!	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Miles Switalski on 06/12/2023	6/12/2023	Miles Switalski	What is one thing I do well and can continue doing well?	Chris' critical thinking and decision-making skills are top-notch. When he asks questions or makes decisions, he makes his thinking process extremely visible, carefully weighs pros/cons and involves all the right people; this demonstrates his great communication skills and persistent One Team approach to solving problems. Additionally, he is very self-reflective; when he feels like he could have done something better, he makes it his personal goal to improve the next chance he gets. I am always impressed when I hear about Chris' interactions with others across the organization.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Miles Switalski on 06/12/2023	6/12/2023	Miles Switalski	What are behaviors that I can start doing differently?	Although Chris has done a great job with this, he should continue growing his capabilities and building relationships throughout the ITFP.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Letricia Medina on 05/01/2023	5/1/2023	Letricia Medina	Which of my behaviors and performance characteristics have been effective while we have worked together so far this year? (Provide specific examples of how this helped me to Align and Inspire, Build Relationships, Grow Capabilities, and/or Deliver Results.)	Since I started working with you this year, you have been very helpful to me with the Tangoe Mobile Training videos. You went out of your way to listen, to proofread information and gave very useful feedback and advice.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Letricia Medina on 05/01/2023	5/1/2023	Letricia Medina	Which of my behaviors and performance characteristics should I work on to be more effective in the future? (Provide specific examples and suggestions to help me to better Align and Inspire, Build Relationships, Grow Capabilities, and/or Deliver Results.)	I would say to find ways to continue learning and build new relationships outside of your team.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Anestacio Rios on 11/15/2022	11/15/2022	Anestacio Rios	What did I do well?	Chris is very thorough with his work. He delivered a slam-dunk with the mobility chatbot. Since I've been associated with corporate mobility going back 7 years, no matter how many Teams posts, sharepoint updates, emails.....the same questions come repeatedly over and over and over again. With Chris' work on the chatbot, no other Chevron person will have to endure answering the same questions. The chatbot will do it for us! Way to go Chris!!	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Anestacio Rios on 11/15/2022	11/15/2022	Anestacio Rios	What can I do better?	Continue to learn the corporate mobility space. There is more work to do in Cyber, more work to do internationally, so keep learning. Keep becoming comfortable to uncomfortable situations with end users.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Miles Switalski on 11/09/2022	11/9/2022	Miles Switalski	What did I do well?	Growing capabilities was a We Lead area that Chris set out at the beginning of the year to improve on, and he did just that. He spent the year creating and troubleshooting his own home networking lab, asking questions and learning more about the Chevron network and took the CCNA exam for the first time. In his day-to-day role, he's volunteered and conquered tasks well above and beyond his normal scope of work which has enabled him to build important relationships with our key vendors along the way. I have also seen Chris hold our managed service providers responsible for their scope(s) of work while finding opportunities to migrate his team's lower value work to them.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Miles Switalski on 11/09/2022	11/9/2022	Miles Switalski	What can I do better?	Chris should continue growing his capabilities and deliver results; I am looking forward to seeing his professional growth in 2023.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Kelley Hengst on 11/02/2022	11/2/2022	Kelley Hengst	What did I do well?	Good engagement on our team check-in calls. Sharp, on-task, exploring areas to grow capabilities.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Anestacio Rios on 07/25/2022	7/25/2022	Anestacio Rios	"How did I positively contribute towards the achievement of a goal or project this year? (Include the name of the goal or project we worked on together.)
+​"	Chris took the chatbot initiative and ran with it. The chatbot will support over 100 BU mobile admins and 15K+ end users. With very little direction, Chris is about done pushing the chatbot through to production.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Anestacio Rios on 07/25/2022	7/25/2022	Anestacio Rios	"How could I have contributed more towards the achievement of a goal or project this year? (Include the name of the goal or project we worked on together.)
+​"	Chris has expressed taking more of a forward role in the mobility space. More in-depth know of carrier wireless processes and contacts will go along way in helping Chris expand his capabilities in the wireless space.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Anestacio Rios on 07/25/2022	7/25/2022	Anestacio Rios	"Which of my behaviors were effective while we worked together this year? Provide specific examples.
+​"	Taking initiative to see a project through to completion. Chris is very effective in this manner.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Anestacio Rios on 07/25/2022	7/25/2022	Anestacio Rios	"Which of my behaviors could I work on to be more effective in the future? Provide specific examples and suggestions
+​"	Rolling up the sleeves, getting more involved one level deeper.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Kelley Hengst on 06/10/2022	6/10/2022	Kelley Hengst	"Which of my behaviors were effective while we worked together this year? Provide specific examples.
+​"	Fast and thorough responses. Good at looking up possible solutions when questions arise in our team check-in meetings.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Kelley Hengst on 06/10/2022	6/10/2022	Kelley Hengst	"Which of my behaviors could I work on to be more effective in the future? Provide specific examples and suggestions
+​"	Take more of an active role in meetings with vendors or other teams. For example, join the conversation before being prompted by a direct question.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Nicholas Smith on 06/08/2022	6/8/2022	Nicholas Smith	"How did I positively contribute towards the achievement of a goal or project this year? (Include the name of the goal or project we worked on together.)
+​"	Christopher has been a great contributor this project. With both of us not having much experience with chatbots, he did everything in his power to provide feedback, clarification, and instructions from his team. With his contributions, we were able to finalize the foundation of the chatbot and work everyday to improve this project. I love Christopher's drive and motivation. He been a great contributor to this project and great co-worker.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Nicholas Smith on 06/08/2022	6/8/2022	Nicholas Smith	"How could I have contributed more towards the achievement of a goal or project this year? (Include the name of the goal or project we worked on together.)
+​"	Christopher has been a great contributor this project. With both of us not having much experience with chatbots, he did everything in his power to provide feedback, clarification, and instructions from his team. With his contributions, we were able to finalize the foundation of the chatbot and work everyday to improve this project. I love Christopher's drive and motivation. He been a great contributor to this project and great co-worker.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Nicholas Smith on 06/08/2022	6/8/2022	Nicholas Smith	"Which of my behaviors were effective while we worked together this year? Provide specific examples.
+​"	Christopher is great contributor and team player. We communicate on a weekly basis about the project and bounce off ideas and task to improve the chatbot. Anytime I needed anything, Christopher made sure I was able to get the information or contact.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Nicholas Smith on 06/08/2022	6/8/2022	Nicholas Smith	"Which of my behaviors could I work on to be more effective in the future? Provide specific examples and suggestions
+​"	N/A. Christopher is a great person.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Miles Switalski on 06/03/2022	6/3/2022	Miles Switalski	"How did I positively contribute towards the achievement of a goal or project this year? (Include the name of the goal or project we worked on together.)
+​"	During our mentoring sessions I've observed your willingness to grow capabilities, engage in active listening and ability to learn very quickly and I have been nothing but impressed! You've been able to build out a complex home network and lab in a matter of weeks of starting your CCNA studies which has helped guide our technical mentoring sessions.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Miles Switalski on 06/03/2022	6/3/2022	Miles Switalski	"How could I have contributed more towards the achievement of a goal or project this year? (Include the name of the goal or project we worked on together.)
+​"	Continue to be curious and ask questions!	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Miles Switalski on 06/03/2022	6/3/2022	Miles Switalski	"Which of my behaviors were effective while we worked together this year? Provide specific examples.
+​"	Chris' self-driven mentality combined with his natural curiosity to learn complex technical topics has made our mentorship a pleasure to have. Additionally, Chris' patience with solving challenges and willingness to solve them collaboratively has enhanced our technical mentoring sessions very much as sometimes I do not know an answer and can learn something myself! This is a great example of Chris' strong teamwork	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Miles Switalski on 06/03/2022	6/3/2022	Miles Switalski	"Which of my behaviors could I work on to be more effective in the future? Provide specific examples and suggestions
+​"	Nothing to add here. Keep up the great work Chris!	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Anonymous on 11/16/2021	11/16/2021	Anonymous	"How did I positively contribute towards the achievement of a goal or project this year? (Please include the name of the goal or project we worked on together.)
+​"	Chris took the lead on our Service Now API integration project for circuit ordering forms. He scheduled weekly meetings and kept up communication and action itemsbetween Chevron teams and our 3rd party vendor.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Anonymous on 11/16/2021	11/16/2021	Anonymous	"Which of my behaviors were effective while we worked together this year? Please provide a fewspecific examples.
+​"	Eagerness to learn new tools and assist on projects. Positive attitude and willingness to help when needed.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Anonymous on 11/16/2021	11/16/2021	Anonymous	"Which of my behaviors could I work on to be more effective in the future? Please provide specific examples and suggestions
+​"	I encourage you to incorporate a more decisive tone in meetings and speak with authority. Watch out for overuse of phrases like "I guess" when communicating needs/requirements in meetings, especially with vendors.	Neutral	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Anonymous on 10/18/2021	10/18/2021	Anonymous	"How did I positively contribute towards the achievement of a goal or project this year? (Include the name of the goal or project we worked on together.)
+​"	Chris did an outstanding job at the 2021 ENABLED Summit. Not only did he involve himself early, but he delivered a very powerful presentation using his own experience and feedback from previous presentations. I hope to see Chris at the leadership level in ENABLED in the future.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Anonymous on 10/18/2021	10/18/2021	Anonymous	"How could I have contributed more towards the achievement of a goal or project this year? (Include the name of the goal or project we worked on together.)
+​"	Continue to display Chevron Way behaviors, ask questions and always ensure your perspective, goals and aspirations are understood by leadership.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Anonymous on 10/18/2021	10/18/2021	Anonymous	"Which of my behaviors were effective while we worked together this year? Provide specific examples.
+​"	Your ability to work with and listen to others' point of view. Additionally, your ability to quickly adapt to changing situations throughout the year. When your Horizon's rotation timeline was changed, you handled the situation extremely well, quickly engaged leaders to understand the change, and have taken the opportunity to prepare for what that role may be.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Anonymous on 10/18/2021	10/18/2021	Anonymous	"Which of my behaviors could I work on to be more effective in the future? Provide specific examples and suggestions
+​"	Continue to be a clear communicator and engage the resources you need to be successful!	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Anonymous on 10/18/2021	10/18/2021	Anonymous	"What would you say are my greatest strengths?
+​"	Communication, agility and acting on feedback received.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Anonymous on 10/18/2021	10/18/2021	Anonymous	"What are the one or two areas that I should focus on improving?
+​"	Nothing comes to mind. Keep up the great work!	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Anonymous on 10/12/2021	10/12/2021	Anonymous	"How did I positively contribute towards the achievement of a goal or project this year? (Please include the name of the goal or project we worked on together.)
+​"	Christopher is helpful in the current Circuit Disconnect/Order ServiceNow feature. He has taken leadership in serving as the project manager, scheduling meetings with Tango, and taking meeting notes. Christopher is always organized and keeps a positive attitude. He keeps up the current actions items for the Chevron development team and Tango. The feature we are currently working on is called "ServiceNow: Tango and SNOW integration for circuit management."	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Martin Mixon on 06/21/2021	6/21/2021	Martin Mixon	How did I positively contribute towards the achievement of a goal or project this year? (Include the name of the goal or project we worked on together.)	Chris has been making positive impact and progress in the area of PowerBI visualization for Network Product Line's Agile performance. Due to limitations of visualization capabilities in ADO, Chris was sought out to help develop dashboards that could provide my historical reference, trending and real-time data of the network product line's performance. This data will serve business value as the product line assesses the product line's performance, pre and post Org Model changes, and what improvements can be made with Managed Service Partners.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Martin Mixon on 06/21/2021	6/21/2021	Martin Mixon	How could I have contributed more towards the achievement of a goal or project this year? (Include the name of the goal or project we worked on together.)	The only suggestion I would have is to develop a network of PowerBI SME's. Reach out to other product lines who are also using PowerBI to visualize product line performance, managing dependencies, and other capabilities. It may generate more ideas for the network product line to consider. You may be able to leverage and develop new capabilities, dashboards and reports faster. Reach out to me if this is an interest and I will help introduce you and build your network.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Martin Mixon on 06/21/2021	6/21/2021	Martin Mixon	Which of my behaviors were effective while we worked together this year? Provide specific examples.	You have consistently demonstrated Chevron Way behaviors. You have been collaborative, supportive, and a team player.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Martin Mixon on 06/21/2021	6/21/2021	Martin Mixon	Which of my behaviors could I work on to be more effective in the future? Provide specific examples and suggestions	"My only suggestion/advice to offer is to remember that you don't always have to have an answer to a question or a problem at the very moment one arises. I have observed that you can assumptions that come across as fact or that's the the answer. You are still very early in your career. It's ok to not know or have the answer and respond with ""I'm not completely sure, I don't know, I believe or I'm assuming. I will research it or look into it and get back to you"".
+I only noticed this and share this feedback because this behavior is something I observed of myself early in my career."	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Kelley Hengst on 06/15/2021	6/15/2021	Kelley Hengst	Which of my behaviors were effective while we worked together this year? Provide specific examples.	Good insight on developing your career track to keep growing and finding new areas to contribute. I appreciate your positive attitude and willingness to jump in and assist when possible.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Kelley Hengst on 06/15/2021	6/15/2021	Kelley Hengst	Which of my behaviors could I work on to be more effective in the future? Provide specific examples and suggestions	Give some focus to more regular follow-up where we have dependencies and need input to continue. The cadence will vary depending on the action item. You've shown improvement in this area so keep it up!	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Miles Switalski on 06/14/2021	6/14/2021	Miles Switalski	How did I positively contribute towards the achievement of a goal or project this year? (Include the name of the goal or project we worked on together.)	Chris positively contributed towards his goal of entering his second Horizon's role this year. He engaged with product line leaders early to develop a plan to grow within Horizons and was very receptive to feedback given to him. Chris asked plenty of questions to ensure he understood the process and to further refine the feedback he was given. Chris also made it clear that he is open to growth opportunities outside of his comfort zone, and is very cognizant of the skills he should grow in his next rotation. These Clear Leader behaviors have made it a pleasure to mentor Chris.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Miles Switalski on 06/14/2021	6/14/2021	Miles Switalski	How could I have contributed more towards the achievement of a goal or project this year? (Include the name of the goal or project we worked on together.)	Continue to display Chevron Way behaviors, ask questions and always ensure your perspective, goals and aspirations are understood by leadership.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Miles Switalski on 06/14/2021	6/14/2021	Miles Switalski	Which of my behaviors were effective while we worked together this year? Provide specific examples.	Some of Chris' behaviors that enable him to be a high performer are his ability to work with and listen to others' point of view. He is a very transparent communicator and effectively engages the resources he needs to succeed without over-reliance.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Miles Switalski on 06/14/2021	6/14/2021	Miles Switalski	Which of my behaviors could I work on to be more effective in the future? Provide specific examples and suggestions	Chris was able to identify this growth area himself with self-reflection, but he should continue to ensure his long-term work commitments align with the Horizon's rotational schedule. Keep up the great work here.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Anonymous on 12/08/2020	12/8/2020	Anonymous	What would you say are my greatest strengths?	Chris' greatest strengths are his ability to work with anyone and everyone, his communication skills and his dedication to his work. These three strengths makes Chris an extremely high performer and a pleasure to work with.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Anonymous on 12/08/2020	12/8/2020	Anonymous	What are the one or two areas that I should focus on improving?	Chris should continue to work on his work-life balance. He has self-identified this as an important improvement area in the past, and has made significant strides in keeping this balance strong. This is a great example of Chris' ability to self-reflect and improve as a result.	Neutral	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Anonymous on 12/08/2020	12/8/2020	Anonymous	What would be the impact if I make the changes you suggested in these areas?	Chris would remain a high performer both at Chevron and in his academia. Great job, Chris!	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Anonymous on 12/08/2020	12/8/2020	Anonymous	What would you say are my greatest strengths?	Your positive attitude and impressive ability to tackle projects with little direction.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Anonymous on 12/08/2020	12/8/2020	Anonymous	What are the one or two areas that I should focus on improving?	As we figure out how to operate in the new restructured organization, focus on how you can help us become more efficient and provide reliable service with fewer resources.	Positive	Comment
+
+
+
+Feedback Given: on Christopher Fornesa from Anonymous on 12/08/2020	12/8/2020	Anonymous	What would be the impact if I make the changes you suggested in these areas?	A smoother transition to the new business model with outsourced resources for circuit ordering.	Positive	Comment
