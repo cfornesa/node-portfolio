@@ -10,6 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/tanaga/styles.css">
+    <script>
+        (function() {
+            var saved = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', saved);
+        })();
+    </script>
 </head>
 <body>
 
@@ -26,6 +32,9 @@
                 <a href="/tanaga" class="nav-link nav-link--active">Tanaga Agent</a>
                 <a href="/" class="nav-link">Home</a>
             </nav>
+            <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle day/night mode">
+                <span class="material-symbols-outlined" id="themeIcon">light_mode</span>
+            </button>
             <button id="clearBtn" class="clear-btn" style="display: none;">
                 <span class="material-symbols-outlined">delete</span>
                 <span>Clear</span>
@@ -110,6 +119,22 @@
     </main>
 
     <script src="/tanaga/script.js"></script>
+    <script>
+        (function() {
+            var btn = document.getElementById('themeToggle');
+            var icon = document.getElementById('themeIcon');
+            function applyTheme(theme) {
+                document.documentElement.setAttribute('data-theme', theme);
+                localStorage.setItem('theme', theme);
+                icon.textContent = theme === 'dark' ? 'dark_mode' : 'light_mode';
+            }
+            applyTheme(localStorage.getItem('theme') || 'light');
+            btn.addEventListener('click', function() {
+                var current = document.documentElement.getAttribute('data-theme');
+                applyTheme(current === 'dark' ? 'light' : 'dark');
+            });
+        })();
+    </script>
   <footer class="app-footer">
     <a href="https://cfornesa.com">Chris Fornesa</a>. Copyright &copy; 2026.
   </footer>

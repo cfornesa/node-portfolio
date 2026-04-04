@@ -18,6 +18,23 @@
     --error:                      #ffb4ab;
 }
 
+[data-theme="light"] {
+    --surface:                    #f5f4f0;
+    --surface-container-lowest:   #ffffff;
+    --surface-container-low:      #eeecea;
+    --surface-container:          #e8e6e3;
+    --surface-container-high:     #e2e0dd;
+    --surface-container-highest:  #dcdad7;
+    --on-surface:                 #1c1b1b;
+    --on-surface-variant:         #4a4540;
+    --primary:                    #7a6000;
+    --on-primary:                 #ffffff;
+    --on-primary-container:       #ffefc6;
+    --outline-variant:            rgba(120, 110, 80, 0.25);
+    --outline:                    #6a6050;
+    --error:                      #ba1a1a;
+}
+
 /* ═══════════════════════════════════════════════════════════════
    RESET + BASE
 ═══════════════════════════════════════════════════════════════ */
@@ -804,4 +821,30 @@ a:hover { opacity: 0.75; }
 
 .app-footer a:hover {
     text-decoration: underline;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   THEME TOGGLE BUTTON
+═══════════════════════════════════════════════════════════════ */
+.theme-toggle-btn {
+    background: none;
+    border: none;
+    color: var(--on-surface-variant);
+    cursor: pointer;
+    padding: 0.4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, color 0.2s;
+    flex-shrink: 0;
+}
+
+.theme-toggle-btn:hover {
+    background: var(--surface-container-high);
+    color: var(--on-surface);
+}
+
+.theme-toggle-btn .material-symbols-outlined {
+    font-size: 1.25rem;
 }
