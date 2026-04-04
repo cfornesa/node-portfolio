@@ -108,9 +108,10 @@ async function createCorpusSignature(documentFiles: string[]): Promise<string> {
 
   const hasher = crypto.createHash('sha256');
   for (const filePath of documentFiles) {
-    const stats = await fs.stat(filePath);
+    const content = await fs.readFile(filePath);
     const relativeSource = path.relative(process.cwd(), filePath);
-    hasher.update(`${relativeSource}:${stats.size}:${stats.mtimeMs.toFixed(0)}\n`);
+    hasher.update(`${relativeSource}\n`);
+    hasher.update(content);
   }
 
   return hasher.digest('hex');
@@ -250,16 +251,20 @@ export class RagService {
     const documentFiles = await listDocumentFiles(this.documentsDir);
     const currentSignature = await createCorpusSignature(documentFiles);
     const persistedIndex = await this.loadPersistedIndex();
+    const label = path.basename(this.documentsDir);
 
     if (
       persistedIndex
       && persistedIndex.chunkCount > 0
       && persistedIndex.corpusSignature === currentSignature
     ) {
+      console.log(`[RAG:${label}] Loaded from cache (${persistedIndex.chunkCount} chunks, ${persistedIndex.documentCount} docs).`);
       return persistedIndex;
     }
 
     if (documentFiles.length === 0) return persistedIndex;
+
+    console.log(`[RAG:${label}] Index stale or missing — rebuilding from ${documentFiles.length} document(s)...`);
     return this.rebuild();
   }
 
@@ -285,6 +290,8 @@ export class RagService {
   }
 
   async warmup(): Promise<void> {
+    const label = path.basename(this.documentsDir);
+    console.log(`[RAG:${label}] Warming up...`);
     await this.ensure();
   }
 
