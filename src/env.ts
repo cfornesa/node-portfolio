@@ -10,7 +10,6 @@ export type RuntimeEnv = {
   ragTopK: number;
   ragChunkSize: number;
   ragChunkOverlap: number;
-  embeddingModel: string;
 };
 
 let cached: RuntimeEnv | null = null;
@@ -58,7 +57,6 @@ export function loadRuntimeEnv(): RuntimeEnv {
     ragTopK: Number(process.env.RAG_TOP_K || 4),
     ragChunkSize: Number(process.env.RAG_CHUNK_SIZE || 1000),
     ragChunkOverlap: Number(process.env.RAG_CHUNK_OVERLAP || 150),
-    embeddingModel: process.env.EMBEDDING_MODEL || 'Xenova/all-MiniLM-L6-v2',
   };
 
   return cached;

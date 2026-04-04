@@ -2,6 +2,7 @@ node_modules/
 .env
 server.bundle.js
 dist/
+rebuild-rag.js
 
 # RAG indexes (large, rebuild locally then commit if desired)
 # data/

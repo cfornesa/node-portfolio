@@ -1,23 +1,36 @@
-const DEFAULT_EMBEDDING_MODEL = 'Xenova/all-MiniLM-L6-v2';
-
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-let extractorPromise: Promise<any> | null = null;
-
-async function getExtractor() {
-  if (!extractorPromise) {
-    const { pipeline } = await import('@xenova/transformers');
-    const model = process.env.EMBEDDING_MODEL?.trim() || DEFAULT_EMBEDDING_MODEL;
-    extractorPromise = pipeline('feature-extraction', model);
-  }
-  return extractorPromise;
-}
+const MISTRAL_EMBED_URL = 'https://api.mistral.ai/v1/embeddings';
+const MISTRAL_EMBED_MODEL = 'mistral-embed';
 
 /**
- * Embed text using the shared @xenova/transformers pipeline.
- * The pipeline is loaded once and reused across all apps.
+ * Embed text using the Mistral Embeddings API (mistral-embed, 1024 dimensions).
+ * Requires MISTRAL_API_KEY in the environment.
  */
 export async function embedText(text: string): Promise<number[]> {
-  const extractor = await getExtractor();
-  const output = await extractor(text, { pooling: 'mean', normalize: true });
-  return Array.from(output.data as Float32Array);
+  const apiKey = process.env.MISTRAL_API_KEY;
+  if (!apiKey) {
+    throw new Error('MISTRAL_API_KEY is not set.');
+  }
+
+  const response = await fetch(MISTRAL_EMBED_URL, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${apiKey}`,
+    },
+    body: JSON.stringify({
+      model: MISTRAL_EMBED_MODEL,
+      input: [text],
+    }),
+  });
+
+  if (!response.ok) {
+    const body = await response.text();
+    throw new Error(`Mistral embeddings API error ${response.status}: ${body}`);
+  }
+
+  const data = (await response.json()) as {
+    data: { embedding: number[]; index: number }[];
+  };
+
+  return data.data[0].embedding;
 }
