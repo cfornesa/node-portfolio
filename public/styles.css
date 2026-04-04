@@ -2,23 +2,6 @@
    DESIGN TOKENS  — shared across all sub-apps
 ═══════════════════════════════════════════════════════════════ */
 :root {
-    --surface:                    #131313;
-    --surface-container-lowest:   #0e0e0e;
-    --surface-container-low:      #1c1b1b;
-    --surface-container:          #20201f;
-    --surface-container-high:     #2a2a2a;
-    --surface-container-highest:  #353535;
-    --on-surface:                 #e5e2e1;
-    --on-surface-variant:         #d2c5ab;
-    --primary:                    #ffcc00;
-    --on-primary:                 #3d2f00;
-    --on-primary-container:       #6f5700;
-    --outline-variant:            rgba(78, 70, 50, 0.3);
-    --outline:                    #9a9078;
-    --error:                      #ffb4ab;
-}
-
-[data-theme="light"] {
     --surface:                    #f5f4f0;
     --surface-container-lowest:   #ffffff;
     --surface-container-low:      #eeecea;
@@ -33,6 +16,23 @@
     --outline-variant:            rgba(120, 110, 80, 0.25);
     --outline:                    #6a6050;
     --error:                      #ba1a1a;
+}
+
+[data-theme="dark"] {
+    --surface:                    #131313;
+    --surface-container-lowest:   #0e0e0e;
+    --surface-container-low:      #1c1b1b;
+    --surface-container:          #20201f;
+    --surface-container-high:     #2a2a2a;
+    --surface-container-highest:  #353535;
+    --on-surface:                 #e5e2e1;
+    --on-surface-variant:         #d2c5ab;
+    --primary:                    #ffcc00;
+    --on-primary:                 #3d2f00;
+    --on-primary-container:       #6f5700;
+    --outline-variant:            rgba(78, 70, 50, 0.3);
+    --outline:                    #9a9078;
+    --error:                      #ffb4ab;
 }
 
 /* ═══════════════════════════════════════════════════════════════
@@ -83,8 +83,8 @@ a:hover { opacity: 0.75; }
     position: sticky;
     top: 0;
     z-index: 50;
-    background: linear-gradient(to bottom, #131313, #1a1a1a);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(to bottom, var(--surface), var(--surface-container-low));
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .header-content {
