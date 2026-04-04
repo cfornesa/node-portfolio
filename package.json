@@ -2,13 +2,14 @@
   "name": "agentic-tools",
   "version": "1.0.0",
   "description": "Unified AI-powered tools: Resume Editor, Art Inspiration, and Tanaga Poetry Agent",
+  "main": "dist/server.js",
   "engines": {
     "node": ">=20"
   },
   "scripts": {
     "dev": "tsx watch server.ts",
-    "build": "esbuild server.ts --bundle --platform=node --target=node20 --format=cjs --outfile=server.bundle.js --external:@xenova/transformers",
-    "start": "node server.bundle.js",
+    "build": "esbuild server.ts --bundle --platform=node --target=node20 --format=cjs --outfile=dist/server.js --external:@xenova/transformers",
+    "start": "node dist/server.js",
     "rag:index": "tsx src/scripts/buildIndex.ts all",
     "rag:index:home": "tsx src/scripts/buildIndex.ts home",
     "rag:index:resume": "tsx src/scripts/buildIndex.ts resume",

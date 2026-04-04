@@ -1,6 +1,5 @@
 node_modules/
 .env
-server.bundle.js
 dist/
 
 # RAG indexes (large, rebuild locally then commit if desired)
