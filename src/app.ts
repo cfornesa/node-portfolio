@@ -63,6 +63,9 @@ export async function createApp() {
   app.get('/tanaga', (_req, res) =>
     res.sendFile(path.join(publicDir, 'tanaga', 'index.html')),
   );
+  app.get('/chat', (_req, res) =>
+    res.sendFile(path.join(publicDir, 'home', 'index.html')),
+  );
   app.get('/', (_req, res) =>
     res.sendFile(path.join(publicDir, 'index.html')),
   );
