@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/resume/styles.css">
     <script>
         (function() {
-            var saved = localStorage.getItem('theme') || 'light';
+            var saved = localStorage.getItem('theme') || 'dark';
             document.documentElement.setAttribute('data-theme', saved);
         })();
     </script>
@@ -32,6 +32,9 @@
                 <a href="/tanaga" class="nav-link">Tanaga Agent</a>
                 <a href="/" class="nav-link">Home</a>
             </nav>
+            <button id="navMenuBtn" class="nav-hamburger-btn" aria-label="Toggle navigation menu">
+                <span class="material-symbols-outlined" id="navMenuIcon">menu</span>
+            </button>
             <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle day/night mode">
                 <span class="material-symbols-outlined" id="themeIcon">light_mode</span>
             </button>
@@ -232,10 +235,27 @@
                 localStorage.setItem('theme', theme);
                 icon.textContent = theme === 'dark' ? 'dark_mode' : 'light_mode';
             }
-            applyTheme(localStorage.getItem('theme') || 'light');
+            applyTheme(localStorage.getItem('theme') || 'dark');
             btn.addEventListener('click', function() {
                 var current = document.documentElement.getAttribute('data-theme');
                 applyTheme(current === 'dark' ? 'light' : 'dark');
+            });
+        })();
+    </script>
+    <script>
+        (function() {
+            var menuBtn = document.getElementById('navMenuBtn');
+            var menuIcon = document.getElementById('navMenuIcon');
+            var header = document.querySelector('.app-header');
+            menuBtn.addEventListener('click', function() {
+                var isOpen = header.classList.toggle('nav-open');
+                menuIcon.textContent = isOpen ? 'close' : 'menu';
+            });
+            document.querySelectorAll('.header-nav .nav-link').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    header.classList.remove('nav-open');
+                    menuIcon.textContent = 'menu';
+                });
             });
         })();
     </script>
