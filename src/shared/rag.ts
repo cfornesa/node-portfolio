@@ -269,8 +269,12 @@ export class RagService {
   }
 
   async getContext(query: string): Promise<string> {
-    const documentIndex = await this.ensure();
-    if (!documentIndex || documentIndex.chunks.length === 0) return '';
+    const label = path.basename(this.documentsDir);
+    const documentIndex = await this.loadPersistedIndex();
+    if (!documentIndex || documentIndex.chunks.length === 0) {
+      console.warn(`[RAG:${label}] No index available — run "npm run rag:index:${label}" to build it.`);
+      return '';
+    }
 
     const queryEmbedding = await embedText(query);
     const scoredChunks = documentIndex.chunks
@@ -292,7 +296,12 @@ export class RagService {
   async warmup(): Promise<void> {
     const label = path.basename(this.documentsDir);
     console.log(`[RAG:${label}] Warming up...`);
-    await this.ensure();
+    const index = await this.loadPersistedIndex();
+    if (index) {
+      console.log(`[RAG:${label}] Index loaded (${index.chunkCount} chunks, ${index.documentCount} docs).`);
+    } else {
+      console.warn(`[RAG:${label}] No index on disk — run "npm run rag:index:${label}" to build it.`);
+    }
   }
 
   async status(): Promise<CorpusStatus> {

@@ -25,18 +25,18 @@
                 <span class="material-symbols-outlined brand-icon">auto_awesome</span>
                 <span class="brand-name">Chris Fornesa</span>
             </a>
-            <nav class="header-nav">
+            <nav id="headerNav" class="header-nav">
                 <a href="/chat" class="nav-link">Ask Chris</a>
                 <a href="/resume" class="nav-link nav-link--active">Resume Agent</a>
                 <a href="/art" class="nav-link">Art Agent</a>
                 <a href="/tanaga" class="nav-link">Tanaga Agent</a>
                 <a href="/" class="nav-link">Home</a>
             </nav>
-            <button id="navMenuBtn" class="nav-hamburger-btn" aria-label="Toggle navigation menu">
-                <span class="material-symbols-outlined" id="navMenuIcon">menu</span>
-            </button>
             <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle day/night mode">
                 <span class="material-symbols-outlined" id="themeIcon">light_mode</span>
+            </button>
+            <button id="navMenuBtn" class="nav-hamburger-btn" aria-label="Open navigation menu" aria-controls="headerNav" aria-expanded="false">
+                <span class="material-symbols-outlined" id="navMenuIcon">menu</span>
             </button>
             <button id="clearBtn" class="clear-btn" style="display: none;">
                 <span class="material-symbols-outlined">delete</span>
@@ -203,7 +203,7 @@
                             <span class="material-symbols-outlined">palette</span>
                         </div>
                         <div class="tool-card-body">
-                            <p class="tool-card-title">Art Inspiration</p>
+                            <p class="tool-card-title">Art Guide</p>
                             <p class="tool-card-desc">Explore techniques, styles, and mediums with a studio-grade art assistant.</p>
                         </div>
                         <span class="tool-card-arrow material-symbols-outlined">arrow_forward</span>
@@ -214,7 +214,7 @@
                             <span class="material-symbols-outlined">history_edu</span>
                         </div>
                         <div class="tool-card-body">
-                            <p class="tool-card-title">Tanaga Agent</p>
+                            <p class="tool-card-title">Tanaga Guide</p>
                             <p class="tool-card-desc">Compose traditional Filipino Tanaga poetry with strict meter validation.</p>
                         </div>
                         <span class="tool-card-arrow material-symbols-outlined">arrow_forward</span>
@@ -226,6 +226,7 @@
     </main>
 
     <script src="/resume/script.js"></script>
+    <script src="/shared-nav.js"></script>
     <script>
         (function() {
             var btn = document.getElementById('themeToggle');
@@ -239,23 +240,6 @@
             btn.addEventListener('click', function() {
                 var current = document.documentElement.getAttribute('data-theme');
                 applyTheme(current === 'dark' ? 'light' : 'dark');
-            });
-        })();
-    </script>
-    <script>
-        (function() {
-            var menuBtn = document.getElementById('navMenuBtn');
-            var menuIcon = document.getElementById('navMenuIcon');
-            var header = document.querySelector('.app-header');
-            menuBtn.addEventListener('click', function() {
-                var isOpen = header.classList.toggle('nav-open');
-                menuIcon.textContent = isOpen ? 'close' : 'menu';
-            });
-            document.querySelectorAll('.header-nav .nav-link').forEach(function(link) {
-                link.addEventListener('click', function() {
-                    header.classList.remove('nav-open');
-                    menuIcon.textContent = 'menu';
-                });
             });
         })();
     </script>

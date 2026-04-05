@@ -5,7 +5,7 @@ let currentResume = null;
 let chatHistory = [];
 
 // DOM Elements
-const welcomeScreen     = document.getElementById('welcomeScreen');
+const welcomeScreen     = document.querySelector('.welcome-screen-chat');
 const messagesContainer = document.getElementById('messagesContainer');
 const loadingIndicator  = document.getElementById('loadingIndicator');
 const messagesEnd       = document.getElementById('messagesEnd');
