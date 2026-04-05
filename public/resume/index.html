@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/resume/styles.css">
     <script>
         (function() {
-            var saved = localStorage.getItem('theme') || 'dark';
+            var saved = localStorage.getItem('theme') || 'light';
             document.documentElement.setAttribute('data-theme', saved);
         })();
     </script>
@@ -235,7 +235,7 @@
                 localStorage.setItem('theme', theme);
                 icon.textContent = theme === 'dark' ? 'dark_mode' : 'light_mode';
             }
-            applyTheme(localStorage.getItem('theme') || 'dark');
+            applyTheme(localStorage.getItem('theme') || 'light');
             btn.addEventListener('click', function() {
                 var current = document.documentElement.getAttribute('data-theme');
                 applyTheme(current === 'dark' ? 'light' : 'dark');
