@@ -144,6 +144,7 @@
 
 @media (max-width: 1023px) {
     .content-grid { grid-template-columns: 1fr; }
+    .tool-cards { grid-template-columns: repeat(2, 1fr); }
 
     .form-panel-wrapper:has(#buildForm[style*="display: none"]) ~ .chat-panel {
         grid-column: 1;
@@ -161,5 +162,6 @@
 }
 
 @media (max-width: 639px) {
+    .tool-cards { grid-template-columns: 1fr; }
     .welcome-heading { font-size: 1.75rem; }
 }
