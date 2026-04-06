@@ -8,13 +8,46 @@ A unified, AI-powered portfolio application built on Node.js and TypeScript. It 
 
 This project went through several distinct phases of development.
 
+### Four Original Apps 
+
+#### Interactive Resume 
+
+The first application that I created was the interactive resume as a project for the <a href="https://www.coursera.org/specializations/vibe-coding" target="_blank">Vibe Coding Essentials Specialization</a> available on Coursera. The specific course was <a href="https://www.coursera.org/learn/vibe-coding-github-copilot?specialization=vibe-coding" target="_blank">Vibe Coding with GitHub Copilot</a>. For this, I originally used GitHub Copilot to create the original project, before proceeding to work with mostly Claude Code to add the chatbot functionality (the Ask Chris chatbot) using Mistral AI agents. The original app is available in this <a href="https://github.com/cfornesa/interactive-resume" target="_blank">GitHub repository</a>.
+
+Then, I transformed the application by leveraging Google Stitch to formulate a new, innovative and eye-catching design before developing it further in Google AI Studio. The result was a revamped application with a new design and a stronger chatbot that leveraged retrieval-augmented generation via my resume and other details about my professional experience. This application can be found in this <a href="https://github.com/cfornesa/react-resume" target="_blank">GitHub Repository</a>. Note that the repository was misnamed as I had believed that this was going to be a React application when it was, in fact, a Vite.js application that eventually became a Node.js with Express application.
+
+#### Tanaga Guide
+
+Originally a FastAPI application without a frontend, the Tanaga Guide elaborates on the idea of the Tanaga, which is a poetry style native to my ethnic group: the Tagalog people. The Tanaga is a poem with a 7-7-7-7 (7 syllable, 4 sentence) structure. However, due to the limitations of using more cost-effective models, I realized that this chatbot better serves as an ideation agent, rather than one that promises syllabic precision. I also found that the most complementary poetry structure in the English language is the Syllabic Verse (with an 8-8-8-8 structure). Therefore, poems are generated in these two languages and, as much as possible, the agent attempts to generate a poem in the specified language with the provided constraints. At first, I simply used Google Gemini and ChatGPT (their chat interfaces) to ideate the backend. Then, I utilized Replit to deploy this as a FastAPI application, while ultimately using Claude Sonnet via Perplexity as the main mode of development and feedback before ultimately deciding to work with Claude Code. This application can be found at this <a href="https://github.com/cfornesa/Tanaga-Agent" target="_blank">GitHub Repository</a>.
+
+#### Resume Guide
+
+Originally a FastAPI application without a frontend, the Resume Guide is a tool that I created to aid me in my job search and also to help me understand how to craft a coherent narrative about my education, skills and work experience. This application separately, takes in, different fields, such as full name, contact details, job description, work experience, education, etc. which are crucial components in a resume. Then, the chatbot yields a tailored resume to use the job description as an attention mechanism to specify the specific details that are most relevant to the description and use this as the basis for the resume. The result is a structured resume with the most relevant details for a given job description. This application can be found at this <a href="https://github.com/cfornesa/Resume-Editor-Agent" target="_blank">GitHub Repository</a>.
+
+#### Art Guide
+
+Originally a FastAPI application without a frontend, the Art Guide is a tool that makes art knowledge more accessible through a chat interface that takes in a user's style, medium, level of expertise, and focus to better guide the model towards reconciling its knowledge with the user's prompt. The output contains historical context and specific techniques (in part due to documentation embedded in retrieval-augmented generation). This application can be found at this <a href="https://github.com/cfornesa/Art-Inspiration" target="_blank">GitHub Repository</a>.
+
+### Consolidation
+
 **Design (Google Stitch):** UI/UX layouts for the landing page and each sub-application were designed using Google Stitch, establishing the visual language, component structure, and information hierarchy before any code was written.
 
 **Consolidation (Claude Code):** The four original applications — previously developed and deployed independently — were merged into a single, coherent codebase by Claude Code. This phase restructured routing, unified shared infrastructure (RAG, Mistral client, PII handling, input sanitization), and established the `src/apps/` module pattern used throughout the backend.
 
-**Functional Refinement (Codex and Gemini CLI):** Specific functional elements across the sub-applications were refined using OpenAI Codex and Gemini CLI, including prompt construction, edge-case handling in the Tanaga meter validator, and the resume build/edit pipeline.
+**Functional Refinement (Codex, Replit, and Gemini CLI):** Specific functional elements across the sub-applications were refined using OpenAI Codex, Replit Agent 4, and Gemini CLI, including prompt construction, edge-case handling in the Tanaga meter validator, and the resume build/edit pipeline.
 
 **Frontend Redesign:** The main landing page (`/`) was originally built as a React application. It was subsequently redesigned as a vanilla HTML, CSS, and JavaScript application to reduce build complexity, eliminate the client-side framework dependency, and improve load performance. The sub-application frontends (`/chat`, `/resume`, `/art`, `/tanaga`) retain their own independent HTML/CSS/JS implementations.
+
+---
+
+## Tech Stack
+
+- **Backend:** Node.js + Express (TypeScript)
+- **Frontend:** Plain HTML, CSS, Vanilla JavaScript (served as static files from `public/`)
+- **AI/LLM:** Mistral AI — Agent completions + `mistral-embed` for embeddings
+- **RAG:** Custom TypeScript implementation (cosine similarity, local JSON index files)
+- **Build:** `esbuild` bundles TypeScript server → `server.bundle.js`
+- **Dev runner:** `tsx watch server.ts`
 
 ---
 
@@ -182,9 +215,17 @@ The **sub-application frontends** (`/chat`, `/resume`, `/art`, `/tanaga`) are ea
 
 ---
 
-## Environment Variables
+## Environment Variables / Secrets
 
-See `.env.example` for the full list of required and optional variables. Required variables are validated at startup and will prevent the server from starting if missing. No default values are provided for secrets.
+| Key | Description |
+|-----|-------------|
+| `MISTRAL_API_KEY` | Mistral AI API key (shared by all agents) |
+| `HOME_AGENT_ID` | Mistral Agent ID for the Home assistant |
+| `RESUME_AGENT_ID` | Mistral Agent ID for the Resume editor |
+| `ART_AGENT_ID` | Mistral Agent ID for the Art agent |
+| `TANAGA_AGENT_ID` | Mistral Agent ID for the Tanaga agent |
+| `PORT` | Server port (default: 5000) |
+| `NODE_ENV` | Environment (`development` / `production`) |
 
 ---
 
