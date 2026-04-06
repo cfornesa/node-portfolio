@@ -26,7 +26,7 @@
   <body>
     <div id="root">
 <div
-  class="min-h-screen font-body selection:bg-primary/30 bg-background text-on-background dark"
+  class="min-h-screen font-body selection:bg-primary/30 bg-background text-on-background"
 >
   <nav
     class="fixed top-0 w-full z-50 bg-surface-nav/90 backdrop-blur-xl border-b border-outline/10"
@@ -83,34 +83,11 @@
             <path d="m6.34 17.66-1.41 1.41"></path>
             <path d="m19.07 4.93-1.41 1.41"></path>
           </svg></button
-        ><button
-          class="text-primary hover:bg-primary/10 p-2 rounded-full transition-all"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-bot"
-            aria-hidden="true"
-          >
-            <path d="M12 8V4H8"></path>
-            <rect width="16" height="12" x="4" y="8" rx="2"></rect>
-            <path d="M2 14h2"></path>
-            <path d="M20 14h2"></path>
-            <path d="M15 13v2"></path>
-            <path d="M9 13v2"></path>
-          </svg></button
         ><button id="resume-toggle-btn-2" class="resume-toggle-btn brutal-border bg-primary text-on-primary px-6 py-2 font-black uppercase text-xs tracking-widest hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
           Resume
         </button>
       </div>
-      <button id="mobile-menu-btn" class="lg:hidden p-2 text-primary hover:bg-primary/10 rounded-lg transition-all" aria-label="Toggle Menu">
+      <button id="mobile-menu-btn" class="lg:hidden p-2 text-primary hover:bg-primary/10 rounded-lg transition-all border border-primary/20" aria-label="Toggle Menu">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="28"
@@ -129,6 +106,19 @@
           <path d="M4 19h16"></path>
         </svg>
       </button>
+    </div>
+    <div
+      id="mobile-menu"
+      class="lg:hidden bg-surface-container border-b border-outline/10 overflow-hidden hidden"
+    >
+      <div
+        class="flex flex-col p-6 gap-4 font-bold uppercase tracking-widest text-sm"
+      >
+        <a class="py-3 border-b border-outline/5 hover:text-primary transition-colors" href="/chat">Ask Chris</a>
+        <a class="py-3 border-b border-outline/5 hover:text-primary transition-colors" href="/resume">Resume Guide</a>
+        <a class="py-3 border-b border-outline/5 hover:text-primary transition-colors" href="/art">Art Guide</a>
+        <a class="py-3 border-b border-outline/5 hover:text-primary transition-colors" href="/tanaga">Tanaga Guide</a>
+      </div>
     </div>
   </nav>
   <aside

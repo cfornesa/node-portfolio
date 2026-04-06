@@ -43,13 +43,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (mobileMenuBtn && mobileMenu) {
         mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+            const isHidden = mobileMenu.classList.toggle('hidden');
+            
+            // Swap icon between Menu and X
+            const svg = mobileMenuBtn.querySelector('svg');
+            if (svg) {
+                if (isHidden) {
+                    // Menu icon
+                    svg.innerHTML = '<path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path>';
+                } else {
+                    // X icon
+                    svg.innerHTML = '<path d="M18 6 6 18"></path><path d="m6 6 12 12"></path>';
+                }
+            }
         });
         
         mobileMenu.addEventListener('click', (e) => {
-            // Close menu if a link is clicked or if the overlay itself is clicked
             if (e.target.tagName === 'A' || e.target === mobileMenu) {
                 mobileMenu.classList.add('hidden');
+                const svg = mobileMenuBtn.querySelector('svg');
+                if (svg) {
+                    svg.innerHTML = '<path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path>';
+                }
             }
         });
     }
