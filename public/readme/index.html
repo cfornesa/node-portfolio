@@ -1,0 +1,1115 @@
+
+    <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Readme | Chris Fornesa</title>
+    <meta name="description" content="Portfolio of Chris Fornesa, a Data & Analytics Professional specializing in quantitative storytelling, machine learning, and ethical AI." />
+    <meta name="keywords" content="Chris Fornesa, Data Science, Analytics, Power BI, Python, Machine Learning, Portfolio" />
+    <meta property="og:title" content="Chris Fornesa | Data & Analytics Professional" />
+    <meta property="og:description" content="Portfolio of Chris Fornesa, a Data & Analytics Professional specializing in quantitative storytelling." />
+    <meta property="og:type" content="website" />
+    <script>
+      (function() {
+        var saved = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', saved);
+        if (saved === 'dark') {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/script.js"></script>
+    <script type="module" crossorigin src="./routes.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/styles.css">
+  </head>
+  <body>
+    <div id="root">
+<div
+  class="min-h-screen font-body selection:bg-primary/30 bg-background text-on-background"
+>
+  <nav
+    class="fixed top-0 w-full z-50 bg-surface-nav/90 backdrop-blur-xl border-b border-outline/10"
+  >
+    <div
+      class="flex justify-between items-center px-6 py-4 max-w-screen-2xl mx-auto relative"
+    >
+      <div
+        class="text-2xl font-black tracking-tighter text-primary uppercase font-sans"
+      >
+        CHRIS FORNESA
+      </div>
+      <div class="hidden lg:flex items-center gap-8 font-semibold" id="headerNav">
+        <a class="text-on-surface-variant hover:text-primary transition-colors"
+          href="../">Home</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors"
+          href="../about">About Me</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors"
+          href="../readme">Readme</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors"
+          href="../resume">Resume</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors"
+          href="../art">Art</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors"
+          href="../tanaga">Tanaga</a>
+      </div>
+      <div class="hidden lg:flex items-center gap-4">
+        <button class="text-on-surface-variant hover:text-primary transition-colors p-2 theme-toggle-btn" title="Toggle Theme">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-sun"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="m4.93 4.93 1.41 1.41"></path>
+            <path d="m17.66 17.66 1.41 1.41"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="m6.34 17.66-1.41 1.41"></path>
+            <path d="m19.07 4.93-1.41 1.41"></path>
+          </svg></button
+        ><button id="resume-toggle-btn-2" class="resume-toggle-btn brutal-border bg-primary text-on-primary px-6 py-2 font-black uppercase text-xs tracking-widest hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
+          Resume
+        </button>
+      </div>
+      <button id="mobile-menu-btn" class="lg:hidden p-2 text-primary hover:bg-primary/10 rounded-lg transition-all border border-primary/20" aria-label="Toggle Menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-menu"
+          aria-hidden="true"
+        >
+          <path d="M4 5h16"></path>
+          <path d="M4 12h16"></path>
+          <path d="M4 19h16"></path>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="lg:hidden bg-surface-container border-b border-outline/10 overflow-hidden hidden">
+      <div class="flex flex-col p-6 gap-4 font-bold uppercase tracking-widest text-sm" id="hamNav">
+        <a class="py-3 border-b border-outline/5 hover:text-primary transition-colors" href="../">Home</a>
+        <a class="py-3 border-b border-outline/5 hover:text-primary transition-colors" href="../about">About Me</a>
+        <a class="py-3 border-b border-outline/5 hover:text-primary transition-colors" href="../readme">Readme</a>
+        <a class="py-3 border-b border-outline/5 hover:text-primary transition-colors" href="../resume">Resume Guide</a>
+        <a class="py-3 border-b border-outline/5 hover:text-primary transition-colors" href="../art">Art Guide</a>
+        <a class="py-3 border-b border-outline/5 hover:text-primary transition-colors" href="../tanaga">Tanaga Guide</a>
+      </div>
+    </div>
+  </nav>
+  <aside class="hidden xl:flex fixed left-0 top-0 h-full w-64 z-40 bg-surface-container-low/60 backdrop-blur-2xl border-r border-outline-variant/10 flex-col pt-24 pb-8 shadow-2xl">
+    <div class="px-6 mb-8">
+      <h2 class="text-primary font-bold text-lg">Navigation</h2>
+      <p class="text-on-surface-variant text-[10px] uppercase tracking-widest">
+        The Synthetic Pulse
+      </p>
+    </div>
+    <nav class="flex-1" id="sideNav">
+      <a class="flex items-center gap-3 text-on-surface-variant p-4 hover:bg-white/5 uppercase text-xs tracking-[0.05em] hover:translate-x-1 transition-transform duration-300" href="../">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-house"
+          aria-hidden="true">
+          <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
+          <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+        </svg>Home</a>
+      <a class="flex items-center gap-3 text-on-surface-variant p-4 hover:bg-white/5 uppercase text-xs tracking-[0.05em] hover:translate-x-1 transition-transform duration-300" href="../about">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-user"
+            aria-hidden="true">
+            <path d="M15 20v-2a4 4 0 0 0-4-4H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-6a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>About Me</a>
+        <a class="flex items-center gap-3 bg-primary/10 text-primary border-r-4 border-primary p-4 uppercase text-xs tracking-[0.05em] hover:translate-x-1 transition-transform duration-300" href="../readme">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-file-text"
+            aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          </svg>Readme</a>
+    </nav>
+    <div class="px-6">
+      <a href="../#contact" class="w-full py-4 border border-primary/30 text-primary font-bold uppercase text-[10px] tracking-widest hover:bg-primary hover:text-on-primary transition-all text-center block">Hire Me</a>
+    </div>
+  </aside>
+  <main class="xl:pl-64 pt-24 min-h-screen grid-bg">
+    <section class="px-6 md:px-12 py-32 relative overflow-hidden min-h-[90vh]">
+      <div class="max-w-4xl mx-auto w-full relative z-10">
+        <h1 class="text-6xl md:text-[6vw] font-sans font-black tracking-tighter leading-[0.85] mb-12 uppercase text-primary -skew-x-6">Chris Fornesa&#39;s Interactive Portfolio</h1>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6 font-medium">A unified, AI-powered portfolio application built on Node.js and TypeScript. It consolidates four distinct tools — a portfolio chatbot, a resume editor, an art inspiration agent, and a Filipino poetry generator — into a single Express server with a shared RAG (Retrieval-Augmented Generation) infrastructure backed by Mistral AI.</p>
+<hr class="border-outline/20 my-16">
+
+    <div class="flex items-baseline gap-4 mb-8 mt-24">
+      <h2 class="text-4xl font-sans font-black tracking-tight uppercase flex items-center gap-3">
+        Development Process
+      </h2>
+      <div class="h-px flex-1 bg-gradient-to-r from-outline-variant to-transparent"></div>
+    </div>
+  
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6 font-medium">This project went through several distinct phases of development.</p>
+<h3 class="text-2xl font-bold text-primary mt-10 mb-4 uppercase">Four Original Apps</h3>
+<h4 class="text-xl font-bold mt-8 mb-4 tracking-wider">Interactive Resume</h4>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6 font-medium">The first application that I created was the interactive resume as a project for the <a href="https://www.coursera.org/specializations/vibe-coding" target="_blank" class="text-primary font-bold hover:underline transition-colors">Vibe Coding Essentials Specialization</a> available on Coursera. The specific course was <a href="https://www.coursera.org/learn/vibe-coding-github-copilot?specialization=vibe-coding" target="_blank" class="text-primary font-bold hover:underline transition-colors">Vibe Coding with GitHub Copilot</a>. For this, I originally used GitHub Copilot to create the original project, before proceeding to work with mostly Claude Code to add the chatbot functionality (the Ask Chris chatbot) using Mistral AI agents. The original app is available in this <a href="https://github.com/cfornesa/interactive-resume" target="_blank" class="text-primary font-bold hover:underline transition-colors">GitHub repository</a>.</p>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6 font-medium">Then, I transformed the application by leveraging Google Stitch to formulate a new, innovative and eye-catching design before developing it further in Google AI Studio. The result was a revamped application with a new design and a stronger chatbot that leveraged retrieval-augmented generation via my resume and other details about my professional experience. This application can be found in this <a href="https://github.com/cfornesa/react-resume" target="_blank" class="text-primary font-bold hover:underline transition-colors">GitHub Repository</a>. Note that the repository was misnamed as I had believed that this was going to be a React application when it was, in fact, a Vite.js application that eventually became a Node.js with Express application.</p>
+<h4 class="text-xl font-bold mt-8 mb-4 tracking-wider">Tanaga Guide</h4>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6 font-medium">Originally a FastAPI application without a frontend, the Tanaga Guide elaborates on the idea of the Tanaga, which is a poetry style native to my ethnic group: the Tagalog people. The Tanaga is a poem with a 7-7-7-7 (7 syllable, 4 sentence) structure. However, due to the limitations of using more cost-effective models, I realized that this chatbot better serves as an ideation agent, rather than one that promises syllabic precision. I also found that the most complementary poetry structure in the English language is the Syllabic Verse (with an 8-8-8-8 structure). Therefore, poems are generated in these two languages and, as much as possible, the agent attempts to generate a poem in the specified language with the provided constraints. At first, I simply used Google Gemini and ChatGPT (their chat interfaces) to ideate the backend. Then, I utilized Replit to deploy this as a FastAPI application, while ultimately using Claude Sonnet via Perplexity as the main mode of development and feedback before ultimately deciding to work with Claude Code. This application can be found at this <a href="https://github.com/cfornesa/Tanaga-Agent" target="_blank" class="text-primary font-bold hover:underline transition-colors">GitHub Repository</a>.</p>
+<h4 class="text-xl font-bold mt-8 mb-4 tracking-wider">Resume Guide</h4>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6 font-medium">Originally a FastAPI application without a frontend, the Resume Guide is a tool that I created to aid me in my job search and also to help me understand how to craft a coherent narrative about my education, skills and work experience. This application separately, takes in, different fields, such as full name, contact details, job description, work experience, education, etc. which are crucial components in a resume. Then, the chatbot yields a tailored resume to use the job description as an attention mechanism to specify the specific details that are most relevant to the description and use this as the basis for the resume. The result is a structured resume with the most relevant details for a given job description. This application can be found at this <a href="https://github.com/cfornesa/Resume-Editor-Agent" target="_blank" class="text-primary font-bold hover:underline transition-colors">GitHub Repository</a>.</p>
+<h4 class="text-xl font-bold mt-8 mb-4 tracking-wider">Art Guide</h4>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6 font-medium">Originally a FastAPI application without a frontend, the Art Guide is a tool that makes art knowledge more accessible through a chat interface that takes in a user&#39;s style, medium, level of expertise, and focus to better guide the model towards reconciling its knowledge with the user&#39;s prompt. The output contains historical context and specific techniques (in part due to documentation embedded in retrieval-augmented generation). This application can be found at this <a href="https://github.com/cfornesa/Art-Inspiration" target="_blank" class="text-primary font-bold hover:underline transition-colors">GitHub Repository</a>.</p>
+<h3 class="text-2xl font-bold text-primary mt-10 mb-4 uppercase">Consolidation</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6 font-medium"><strong>Design (Google Stitch):</strong> UI/UX layouts for the landing page and each sub-application were designed using Google Stitch, establishing the visual language, component structure, and information hierarchy before any code was written.</p>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6 font-medium"><strong>Consolidation (Claude Code):</strong> The four original applications — previously developed and deployed independently — were merged into a single, coherent codebase by Claude Code. This phase restructured routing, unified shared infrastructure (RAG, Mistral client, PII handling, input sanitization), and established the <code class="font-mono text-sm text-secondary">src/apps/</code> module pattern used throughout the backend.</p>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6 font-medium"><strong>Functional Refinement (Codex, Replit, and Gemini CLI):</strong> Specific functional elements across the sub-applications were refined using OpenAI Codex, Replit Agent 4, and Gemini CLI, including prompt construction, edge-case handling in the Tanaga meter validator, and the resume build/edit pipeline.</p>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6 font-medium"><strong>Frontend Redesign:</strong> The main landing page (<code class="font-mono text-sm text-secondary">/</code>) was originally built as a React application. It was subsequently redesigned as a vanilla HTML, CSS, and JavaScript application to reduce build complexity, eliminate the client-side framework dependency, and improve load performance. The sub-application frontends (<code class="font-mono text-sm text-secondary">/chat</code>, <code class="font-mono text-sm text-secondary">/resume</code>, <code class="font-mono text-sm text-secondary">/art</code>, <code class="font-mono text-sm text-secondary">/tanaga</code>) retain their own independent HTML/CSS/JS implementations.</p>
+<hr class="border-outline/20 my-16">
+
+    <div class="flex items-baseline gap-4 mb-8 mt-24">
+      <h2 class="text-4xl font-sans font-black tracking-tight uppercase flex items-center gap-3">
+        Tech Stack
+      </h2>
+      <div class="h-px flex-1 bg-gradient-to-r from-outline-variant to-transparent"></div>
+    </div>
+  
+<ul class="list-disc pl-6 mb-8 text-on-surface-variant space-y-2">
+<li><strong>Backend:</strong> Node.js + Express (TypeScript)</li>
+<li><strong>Frontend:</strong> Plain HTML, CSS, Vanilla JavaScript (served as static files from <code class="font-mono text-sm text-secondary">public/</code>)</li>
+<li><strong>AI/LLM:</strong> Mistral AI — Agent completions + <code class="font-mono text-sm text-secondary">mistral-embed</code> for embeddings</li>
+<li><strong>RAG:</strong> Custom TypeScript implementation (cosine similarity, local JSON index files)</li>
+<li><strong>Build:</strong> <code class="font-mono text-sm text-secondary">esbuild</code> bundles TypeScript server → <code class="font-mono text-sm text-secondary">server.bundle.js</code></li>
+<li><strong>Dev runner:</strong> <code class="font-mono text-sm text-secondary">tsx watch server.ts</code></li>
+</ul>
+<hr class="border-outline/20 my-16">
+
+    <div class="flex items-baseline gap-4 mb-8 mt-24">
+      <h2 class="text-4xl font-sans font-black tracking-tight uppercase flex items-center gap-3">
+        Routes
+      </h2>
+      <div class="h-px flex-1 bg-gradient-to-r from-outline-variant to-transparent"></div>
+    </div>
+  
+<div class="overflow-x-auto mb-8"><table class="w-full text-left border-collapse">
+<thead>
+<tr>
+<th class="border-b-2 border-outline/20 py-3 px-4 font-bold uppercase tracking-wider text-xs text-primary">Route</th>
+<th class="border-b-2 border-outline/20 py-3 px-4 font-bold uppercase tracking-wider text-xs text-primary">Name</th>
+<th class="border-b-2 border-outline/20 py-3 px-4 font-bold uppercase tracking-wider text-xs text-primary">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant"><code class="font-mono text-sm text-secondary">/</code></td>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">Home</td>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">Portfolio landing page with embedded chatbot modal</td>
+</tr>
+<tr>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant"><code class="font-mono text-sm text-secondary">/chat</code></td>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">Ask Chris</td>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">Conversational assistant grounded in portfolio documents</td>
+</tr>
+<tr>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant"><code class="font-mono text-sm text-secondary">/resume</code></td>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">Resume Guide</td>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">Two-phase resume builder and conversational editor</td>
+</tr>
+<tr>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant"><code class="font-mono text-sm text-secondary">/art</code></td>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">Art Guide</td>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">Art inspiration chatbot with preference-based fine-tuning</td>
+</tr>
+<tr>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant"><code class="font-mono text-sm text-secondary">/tanaga</code></td>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">Tanaga Guide</td>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">Filipino and English short-form poetry generator with meter validation</td>
+</tr>
+<tr>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant"><code class="font-mono text-sm text-secondary">/health</code></td>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">Health Check</td>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">Server status and registered app list</td>
+</tr>
+</tbody></table></div>
+<hr class="border-outline/20 my-16">
+
+    <div class="flex items-baseline gap-4 mb-8 mt-24">
+      <h2 class="text-4xl font-sans font-black tracking-tight uppercase flex items-center gap-3">
+        Project Structure
+      </h2>
+      <div class="h-px flex-1 bg-gradient-to-r from-outline-variant to-transparent"></div>
+    </div>
+  
+<pre class="bg-surface-container p-6 rounded-xl mb-8 overflow-x-auto border border-outline-variant/20"><code class="font-mono text-sm text-secondary" class="font-mono text-sm text-secondary">agentic-tools/
+├── server.ts                   # Entry point: loads env, starts Express, runs RAG warmup
+├── tsconfig.json
+├── package.json
+│
+├── src/
+│   ├── app.ts                  # Express app factory: CORS, static files, routers, SPA fallbacks
+│   ├── env.ts                  # Environment variable loading, validation, and singleton cache
+│   │
+│   ├── apps/
+│   │   ├── home/
+│   │   │   ├── home.ts         # Ask Chris: RAG retrieval + Mistral agent conversation
+│   │   │   └── routes.ts       # POST /chat, GET /rag/status, POST /rag/reindex
+│   │   ├── resume/
+│   │   │   ├── resume.ts       # Build and edit resume logic with PII redact/restore
+│   │   │   └── routes.ts       # POST /resume/build, POST /resume/chat, RAG endpoints
+│   │   ├── art/
+│   │   │   ├── art.ts          # Art chat with preference context injection and RAG
+│   │   │   └── routes.ts       # POST /art/chat, RAG endpoints
+│   │   └── tanaga/
+│   │       ├── tanaga.ts       # Poem generation, heuristic syllable counter, meter validator
+│   │       └── routes.ts       # POST /tanaga/generate, RAG endpoints
+│   │
+│   ├── shared/
+│   │   ├── rag.ts              # RagService class: chunking, embedding, cosine search, persistence
+│   │   ├── embeddings.ts       # Mistral Embeddings API client (mistral-embed, 1024 dimensions)
+│   │   ├── mistral.ts          # Mistral agent conversation and completions clients
+│   │   ├── pii.ts              # PII redaction and restoration (email, phone, SSN, address)
+│   │   ├── sanitize.ts         # HTML stripping, prompt injection filtering, field length limits
+│   │   └── format.ts           # Markdown stripping for plain-text AI reply display
+│   │
+│   └── scripts/
+│       └── buildIndex.ts       # CLI: build RAG index for one or all apps offline
+│
+├── public/
+│   ├── index.html              # Landing page (vanilla HTML — previously React)
+│   ├── styles.css              # Global/shared styles
+│   ├── shared-nav.js           # Shared responsive navigation script for sub-apps
+│   │
+│   ├── assets/
+│   │   ├── script.js           # Landing page JS: theme toggle, mobile menu, chat modal, resume modal
+│   │   └── styles.css          # Landing page compiled styles
+│   │
+│   ├── home/                   # Ask Chris frontend
+│   ├── resume/                 # Resume Guide frontend
+│   ├── art/                    # Art Guide frontend
+│   └── tanaga/                 # Tanaga Guide frontend
+│
+├── data/
+│   ├── home/rag-index.json     # Pre-built RAG index for Ask Chris
+│   ├── resume/rag-index.json   # Pre-built RAG index for Resume Guide
+│   ├── art/rag-index.json      # Pre-built RAG index for Art Guide
+│   └── tanaga/rag-index.json   # Pre-built RAG index for Tanaga Guide
+│
+├── documents/
+│   ├── home/                   # Source documents for Ask Chris RAG corpus
+│   ├── resume/                 # Source documents for Resume Guide RAG corpus
+│   ├── art/                    # Source documents for Art Guide RAG corpus
+│   └── tanaga/                 # Source documents for Tanaga Guide RAG corpus
+│
+└── python-reference/
+    ├── art/                    # Original FastAPI implementation (Art Inspiration Agent)
+    ├── resume/                 # Original FastAPI implementation (Resume Agent)
+    └── tanaga/                 # Original FastAPI implementation (Tanaga Agent)
+</code></pre>
+<hr class="border-outline/20 my-16">
+
+    <div class="flex items-baseline gap-4 mb-8 mt-24">
+      <h2 class="text-4xl font-sans font-black tracking-tight uppercase flex items-center gap-3">
+        Systems Design
+      </h2>
+      <div class="h-px flex-1 bg-gradient-to-r from-outline-variant to-transparent"></div>
+    </div>
+  
+<h3 class="text-2xl font-bold text-primary mt-10 mb-4 uppercase">Backend Architecture</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6 font-medium">The server is a single Express application. On startup, <code class="font-mono text-sm text-secondary">server.ts</code> validates all required environment variables, registers routers for each sub-application, serves static files from <code class="font-mono text-sm text-secondary">public/</code>, and runs a non-blocking parallel warmup of all four RAG indexes.</p>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6 font-medium">Each sub-application follows the same module pattern:</p>
+<ul class="list-disc pl-6 mb-8 text-on-surface-variant space-y-2">
+<li><strong><code class="font-mono text-sm text-secondary">&lt;app&gt;.ts</code></strong> — core business logic: constructs the prompt, calls the Mistral agent, applies pre/post-processing (PII redaction, markdown stripping)</li>
+<li><strong><code class="font-mono text-sm text-secondary">routes.ts</code></strong> — Express router: validates input with Zod, delegates to the logic module, exposes RAG management endpoints</li>
+</ul>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6 font-medium">All sub-apps share infrastructure from <code class="font-mono text-sm text-secondary">src/shared/</code>:</p>
+<div class="overflow-x-auto mb-8"><table class="w-full text-left border-collapse">
+<thead>
+<tr>
+<th class="border-b-2 border-outline/20 py-3 px-4 font-bold uppercase tracking-wider text-xs text-primary">Module</th>
+<th class="border-b-2 border-outline/20 py-3 px-4 font-bold uppercase tracking-wider text-xs text-primary">Responsibility</th>
+</tr>
+</thead>
+<tbody><tr>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant"><code class="font-mono text-sm text-secondary">rag.ts</code></td>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">Document parsing, chunking, embedding, cosine similarity retrieval, index persistence and staleness detection</td>
+</tr>
+<tr>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant"><code class="font-mono text-sm text-secondary">embeddings.ts</code></td>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">Calls the Mistral Embeddings API to produce 1024-dimension vectors</td>
+</tr>
+<tr>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant"><code class="font-mono text-sm text-secondary">mistral.ts</code></td>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">Two agent call strategies: <code class="font-mono text-sm text-secondary">runAgentConversation</code> (Conversations API) and <code class="font-mono text-sm text-secondary">runAgentCompletions</code> (Agents Completions API)</td>
+</tr>
+<tr>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant"><code class="font-mono text-sm text-secondary">pii.ts</code></td>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">Reversible redaction (used by Resume) and non-reversible redaction (used by Home and Art) for emails, phone numbers, SSNs, and addresses</td>
+</tr>
+<tr>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant"><code class="font-mono text-sm text-secondary">sanitize.ts</code></td>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">Strips HTML, neutralizes prompt injection patterns, and enforces per-field character limits</td>
+</tr>
+<tr>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant"><code class="font-mono text-sm text-secondary">format.ts</code></td>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">Strips markdown from AI replies for plain-text display in the browser</td>
+</tr>
+</tbody></table></div>
+<h3 class="text-2xl font-bold text-primary mt-10 mb-4 uppercase">RAG Pipeline</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6 font-medium">Each of the four apps has its own isolated RAG corpus under <code class="font-mono text-sm text-secondary">documents/&lt;app&gt;/</code> and a corresponding pre-built index at <code class="font-mono text-sm text-secondary">data/&lt;app&gt;/rag-index.json</code>.</p>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6 font-medium"><strong>Indexing:</strong> Document files (PDF, DOCX, TXT, MD) are extracted, split into overlapping text chunks, and embedded using the Mistral Embeddings API. The resulting vectors and metadata are serialized to a JSON index file. A SHA-256 corpus signature is stored with the index; on subsequent starts the signature is recomputed and compared — if it does not match, the index is rebuilt automatically.</p>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6 font-medium"><strong>Retrieval:</strong> At query time the user&#39;s message is embedded and scored against all stored chunks via cosine similarity. The top-K chunks above a 0.1 relevance threshold are concatenated and prepended to the prompt as grounding context.</p>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6 font-medium"><strong>Index management scripts:</strong></p>
+<pre class="bg-surface-container p-6 rounded-xl mb-8 overflow-x-auto border border-outline-variant/20"><code class="language-bash" class="font-mono text-sm text-secondary" class="font-mono text-sm text-secondary">npm run rag:index          # Rebuild all four indexes
+npm run rag:index:home     # Rebuild only the Ask Chris index
+npm run rag:index:resume   # Rebuild only the Resume index
+npm run rag:index:art      # Rebuild only the Art index
+npm run rag:index:tanaga   # Rebuild only the Tanaga index
+</code></pre>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6 font-medium">Each app also exposes live RAG endpoints: <code class="font-mono text-sm text-secondary">GET /&lt;app&gt;/rag/status</code> and <code class="font-mono text-sm text-secondary">POST /&lt;app&gt;/rag/reindex</code>.</p>
+<h3 class="text-2xl font-bold text-primary mt-10 mb-4 uppercase">Mistral AI Integration</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6 font-medium">Each sub-application has its own dedicated Mistral agent (configured via agent IDs in the environment). A single API key is shared across all four agents. Two calling conventions are used depending on the app:</p>
+<ul class="list-disc pl-6 mb-8 text-on-surface-variant space-y-2">
+<li><strong>Conversations API</strong> (<code class="font-mono text-sm text-secondary">/v1/conversations</code>) — used by Ask Chris and Resume Guide; maintains a conversation thread</li>
+<li><strong>Agents Completions API</strong> (<code class="font-mono text-sm text-secondary">/v1/agents/completions</code>) — used by Art Guide and Tanaga Guide; stateless messages-array format</li>
+</ul>
+<h3 class="text-2xl font-bold text-primary mt-10 mb-4 uppercase">Sub-Application Specifics</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6 font-medium"><strong>Ask Chris (<code class="font-mono text-sm text-secondary">/chat</code>):</strong> Retrieves relevant portfolio document context using RAG, prepends it to the user message as <code class="font-mono text-sm text-secondary">[Portfolio Context]</code>, and forwards the augmented input to the Home agent. PII is non-reversibly redacted before the message leaves the server.</p>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6 font-medium"><strong>Resume Guide (<code class="font-mono text-sm text-secondary">/resume</code>):</strong> Operates in two phases. In <strong>build</strong> mode, structured resume fields are assembled into a seed prompt and passed to the agent with an explicit instruction to construct a complete resume without fabricating any content. In <strong>edit</strong> mode, PII is reversibly redacted using a session-scoped <code class="font-mono text-sm text-secondary">PiiRedactor</code>, RAG context is retrieved from local resume documents, and the full conversation history is included. PII tokens are restored in the model&#39;s response before it reaches the client.</p>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6 font-medium"><strong>Art Guide (<code class="font-mono text-sm text-secondary">/art</code>):</strong> Accepts optional user preferences (<code class="font-mono text-sm text-secondary">style</code>, <code class="font-mono text-sm text-secondary">medium</code>, <code class="font-mono text-sm text-secondary">skill_level</code>, <code class="font-mono text-sm text-secondary">focus</code>) that are serialized into a structured preference context block and prepended to every request. This allows the agent to calibrate vocabulary, technique depth, and historical references to the user&#39;s profile for the duration of the session.</p>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6 font-medium"><strong>Tanaga Guide (<code class="font-mono text-sm text-secondary">/tanaga</code>):</strong> Generates four-line short-form poetry in either Tagalog (target: 7 syllables per line) or English (target: 8 syllables per line). After each generation attempt a heuristic syllable counter validates the meter line by line. If any line fails, the agent is called a second time before the result is returned. The meter report is included in the API response alongside the poem.</p>
+<h3 class="text-2xl font-bold text-primary mt-10 mb-4 uppercase">Frontend Architecture</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6 font-medium">The <strong>landing page</strong> (<code class="font-mono text-sm text-secondary">/</code>) is a self-contained vanilla HTML/CSS/JS application. The compiled stylesheet and script are served from <code class="font-mono text-sm text-secondary">public/assets/</code>. JavaScript handles theme toggling (with <code class="font-mono text-sm text-secondary">localStorage</code> persistence), mobile menu state, a chatbot modal that connects to the <code class="font-mono text-sm text-secondary">/chat</code> endpoint, and a resume viewer modal.</p>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6 font-medium">The <strong>sub-application frontends</strong> (<code class="font-mono text-sm text-secondary">/chat</code>, <code class="font-mono text-sm text-secondary">/resume</code>, <code class="font-mono text-sm text-secondary">/art</code>, <code class="font-mono text-sm text-secondary">/tanaga</code>) are each independent HTML pages in their respective <code class="font-mono text-sm text-secondary">public/&lt;app&gt;/</code> directories. They share <code class="font-mono text-sm text-secondary">public/styles.css</code> for global tokens and <code class="font-mono text-sm text-secondary">public/shared-nav.js</code> for the responsive navigation behavior (hamburger menu, keyboard escape dismissal, viewport-aware state sync).</p>
+<hr class="border-outline/20 my-16">
+
+    <div class="flex items-baseline gap-4 mb-8 mt-24">
+      <h2 class="text-4xl font-sans font-black tracking-tight uppercase flex items-center gap-3">
+        Security
+      </h2>
+      <div class="h-px flex-1 bg-gradient-to-r from-outline-variant to-transparent"></div>
+    </div>
+  
+<div class="overflow-x-auto mb-8"><table class="w-full text-left border-collapse">
+<thead>
+<tr>
+<th class="border-b-2 border-outline/20 py-3 px-4 font-bold uppercase tracking-wider text-xs text-primary">Control</th>
+<th class="border-b-2 border-outline/20 py-3 px-4 font-bold uppercase tracking-wider text-xs text-primary">Implementation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">PII redaction</td>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">Regex-based detection of emails, phone numbers, SSNs, and US addresses; reversible (Resume) and non-reversible (Home, Art) modes</td>
+</tr>
+<tr>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">Prompt injection filtering</td>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">Neutralizes common override patterns (<code class="font-mono text-sm text-secondary">ignore previous instructions</code>, role-switching phrases, <code class="font-mono text-sm text-secondary">[INST]</code>, <code class="font-mono text-sm text-secondary">&lt;system&gt;</code> tags) before any user input reaches the model</td>
+</tr>
+<tr>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">Input field limits</td>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">Per-field character caps enforced at the sanitization layer; 2 MB JSON body limit at the Express layer</td>
+</tr>
+<tr>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">CORS</td>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">Locked to the production <code class="font-mono text-sm text-secondary">APP_URL</code> in production; permissive in development</td>
+</tr>
+<tr>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">Server fingerprinting</td>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant"><code class="font-mono text-sm text-secondary">x-powered-by</code> header disabled</td>
+</tr>
+<tr>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">Schema validation</td>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">All API request bodies validated with Zod before reaching business logic</td>
+</tr>
+</tbody></table></div>
+<hr class="border-outline/20 my-16">
+
+    <div class="flex items-baseline gap-4 mb-8 mt-24">
+      <h2 class="text-4xl font-sans font-black tracking-tight uppercase flex items-center gap-3">
+        Environment Variables / Secrets
+      </h2>
+      <div class="h-px flex-1 bg-gradient-to-r from-outline-variant to-transparent"></div>
+    </div>
+  
+<div class="overflow-x-auto mb-8"><table class="w-full text-left border-collapse">
+<thead>
+<tr>
+<th class="border-b-2 border-outline/20 py-3 px-4 font-bold uppercase tracking-wider text-xs text-primary">Key</th>
+<th class="border-b-2 border-outline/20 py-3 px-4 font-bold uppercase tracking-wider text-xs text-primary">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant"><code class="font-mono text-sm text-secondary">MISTRAL_API_KEY</code></td>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">Mistral AI API key (shared by all agents)</td>
+</tr>
+<tr>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant"><code class="font-mono text-sm text-secondary">HOME_AGENT_ID</code></td>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">Mistral Agent ID for the Home assistant</td>
+</tr>
+<tr>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant"><code class="font-mono text-sm text-secondary">RESUME_AGENT_ID</code></td>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">Mistral Agent ID for the Resume editor</td>
+</tr>
+<tr>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant"><code class="font-mono text-sm text-secondary">ART_AGENT_ID</code></td>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">Mistral Agent ID for the Art agent</td>
+</tr>
+<tr>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant"><code class="font-mono text-sm text-secondary">TANAGA_AGENT_ID</code></td>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">Mistral Agent ID for the Tanaga agent</td>
+</tr>
+<tr>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant"><code class="font-mono text-sm text-secondary">PORT</code></td>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">Server port (default: 5000)</td>
+</tr>
+<tr>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant"><code class="font-mono text-sm text-secondary">NODE_ENV</code></td>
+<td class="border-b border-outline/10 py-3 px-4 text-on-surface-variant">Environment (<code class="font-mono text-sm text-secondary">development</code> / <code class="font-mono text-sm text-secondary">production</code>)</td>
+</tr>
+</tbody></table></div>
+<hr class="border-outline/20 my-16">
+
+    <div class="flex items-baseline gap-4 mb-8 mt-24">
+      <h2 class="text-4xl font-sans font-black tracking-tight uppercase flex items-center gap-3">
+        Getting Started
+      </h2>
+      <div class="h-px flex-1 bg-gradient-to-r from-outline-variant to-transparent"></div>
+    </div>
+  
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6 font-medium"><strong>Prerequisites:</strong> Node.js 20 or later.</p>
+<pre class="bg-surface-container p-6 rounded-xl mb-8 overflow-x-auto border border-outline-variant/20"><code class="language-bash" class="font-mono text-sm text-secondary" class="font-mono text-sm text-secondary"># Install dependencies
+npm install
+
+# Copy and populate environment variables
+cp .env.example .env
+
+# Build RAG indexes from source documents (first run or after adding documents)
+npm run rag:index
+
+# Start the development server with hot reload
+npm run dev
+</code></pre>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6 font-medium">The server listens on port 5000 by default. Visit <code class="font-mono text-sm text-secondary">http://localhost:5000</code>.</p>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6 font-medium"><strong>Production build:</strong></p>
+<pre class="bg-surface-container p-6 rounded-xl mb-8 overflow-x-auto border border-outline-variant/20"><code class="language-bash" class="font-mono text-sm text-secondary" class="font-mono text-sm text-secondary">npm run build   # Bundles server.ts into server.bundle.js via esbuild
+npm start       # Runs the bundle with Node
+</code></pre>
+<hr class="border-outline/20 my-16">
+
+    <div class="flex items-baseline gap-4 mb-8 mt-24">
+      <h2 class="text-4xl font-sans font-black tracking-tight uppercase flex items-center gap-3">
+        Python Reference
+      </h2>
+      <div class="h-px flex-1 bg-gradient-to-r from-outline-variant to-transparent"></div>
+    </div>
+  
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6 font-medium">The <code class="font-mono text-sm text-secondary">python-reference/</code> directory contains the original standalone FastAPI implementations of the Art Inspiration Agent, Resume Agent, and Tanaga Agent. These are preserved for reference and are not part of the active application. The TypeScript implementations in <code class="font-mono text-sm text-secondary">src/apps/</code> are functionally equivalent ports that share the unified RAG and Mistral infrastructure.</p>
+
+
+      </div>
+    </section>
+    </main>
+  <div
+    class="fixed bottom-10 left-1/2 -translate-x-1/2 z-50 flex items-center gap-4 px-6 py-4 glass-panel rounded-full border border-primary/20 shadow-2xl"
+  >
+    <button class="text-on-surface-variant hover:text-primary transition-colors theme-toggle-btn" title="Toggle Theme">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-sun"
+        aria-hidden="true"
+      >
+        <circle cx="12" cy="12" r="4"></circle>
+        <path d="M12 2v2"></path>
+        <path d="M12 20v2"></path>
+        <path d="m4.93 4.93 1.41 1.41"></path>
+        <path d="m17.66 17.66 1.41 1.41"></path>
+        <path d="M2 12h2"></path>
+        <path d="M20 12h2"></path>
+        <path d="m6.34 17.66-1.41 1.41"></path>
+        <path d="m19.07 4.93-1.41 1.41"></path>
+      </svg>
+    </button>
+    <div class="h-6 w-px bg-outline-variant/30 mx-2"></div>
+    <button id="resume-toggle-btn" class="resume-toggle-btn flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-on-surface hover:text-primary transition-colors">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-eye"
+        aria-hidden="true"
+      >
+        <path
+          d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"
+        ></path>
+        <circle cx="12" cy="12" r="3"></circle>
+      </svg>
+      Resume
+    </button>
+    <div class="h-6 w-px bg-outline-variant/30 mx-2"></div>
+    <button id="chat-toggle-btn" class="group flex items-center gap-3 bg-primary text-on-primary font-bold p-3 rounded-full hover:shadow-[0_0_20px_rgba(255,124,245,0.4)] transition-all" aria-label="Chat with Chris">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-bot"
+        aria-hidden="true"
+      >
+        <path d="M12 8V4H8"></path>
+        <rect width="16" height="12" x="4" y="8" rx="2"></rect>
+        <path d="M2 14h2"></path>
+        <path d="M20 14h2"></path>
+        <path d="M15 13v2"></path>
+        <path d="M9 13v2"></path>
+      </svg>
+    </button>
+  </div>
+  <div
+    id="chatbot-modal" class="fixed inset-0 z-[1100] bg-black/90 backdrop-blur-md flex items-center justify-center p-0 md:p-4 lg:p-8 hidden"
+    style="opacity: 1"
+  >
+    <aside
+      class="w-full h-full md:h-auto md:max-h-[calc(100vh-2rem)] lg:max-h-[85vh] md:max-w-3xl glass-panel md:rounded-2xl shadow-2xl flex flex-col overflow-hidden"
+      style="opacity: 1; transform: none"
+    >
+      <div
+        class="p-4 border-b border-outline-variant/10 flex justify-between items-center bg-surface-container"
+      >
+        <div class="flex items-center gap-3">
+          <div class="relative">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-bot text-primary"
+              aria-hidden="true"
+            >
+              <path d="M12 8V4H8"></path>
+              <rect width="16" height="12" x="4" y="8" rx="2"></rect>
+              <path d="M2 14h2"></path>
+              <path d="M20 14h2"></path>
+              <path d="M15 13v2"></path>
+              <path d="M9 13v2"></path>
+            </svg>
+            <div
+              class="absolute -top-1 -right-1 w-2 h-2 bg-green-500 rounded-full animate-pulse"
+            ></div>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm">Ask Chris</h3>
+            <p
+              class="text-[10px] text-primary uppercase tracking-widest flex items-center gap-1"
+            >
+              <span class="w-1 h-1 bg-primary rounded-full"></span>Cybersecurity
+              Analyst Monitoring
+            </p>
+          </div>
+        </div>
+        <button id="chat-close" class="p-2 hover:bg-white/5 rounded-lg text-on-surface-variant hover:text-primary transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"
+            aria-hidden="true"
+          >
+            <path d="M18 6 6 18"></path>
+            <path d="m6 6 12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <div id="chat-messages" class="flex-1 overflow-y-auto p-6 space-y-4 scrollbar-hide">
+        <div
+          class="text-center py-12 landscape:py-4 landscape:text-left landscape:md:text-center"
+        >
+          <p
+            class="text-on-surface-variant text-base mb-6 landscape:mb-2 landscape:md:mb-6"
+          >
+            Hi! I'm Chris's AI assistant. Ask me anything about his background
+            or skills.
+          </p>
+          <div
+            class="flex flex-wrap justify-center landscape:justify-start landscape:md:justify-center gap-3"
+          >
+            <button
+              class="quick-prompt-btn text-xs uppercase font-bold tracking-widest px-4 py-3 bg-surface-bright rounded-full border border-outline-variant/20 hover:border-primary transition-all"
+            >
+              Tell me about Chris</button
+            ><button
+              class="quick-prompt-btn text-xs uppercase font-bold tracking-widest px-4 py-3 bg-surface-bright rounded-full border border-outline-variant/20 hover:border-primary transition-all"
+            >
+              What are his skills?</button
+            ><button class="quick-prompt-btn text-xs uppercase font-bold tracking-widest px-4 py-3 bg-surface-bright rounded-full border border-outline-variant/20 hover:border-primary transition-all">Work experience?</button>
+          </div>
+        </div>
+        <div></div>
+      </div>
+      <form id="chat-form" class="p-6 border-t border-outline-variant/10 bg-surface-container">
+        <div class="relative max-w-3xl mx-auto w-full">
+          <input id="chat-input" placeholder="Type your question..." class="w-full bg-background border border-outline-variant/20 rounded-full px-6 py-4 pr-14 text-base focus:outline-none focus:border-primary transition-all shadow-inner" type="text" value=""/><button
+            type="submit"
+            class="absolute right-3 top-1/2 -translate-y-1/2 text-primary hover:scale-110 transition-all p-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-send"
+              aria-hidden="true"
+            >
+              <path
+                d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"
+              ></path>
+              <path d="m21.854 2.147-10.94 10.939"></path>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </aside>
+  </div>
+  <div
+    class="fixed top-0 left-0 w-full h-full pointer-events-none -z-10 opacity-30 overflow-hidden"
+  >
+    <div
+      class="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] bg-primary/20 blur-[120px] rounded-full"
+    ></div>
+    <div
+      class="absolute top-[40%] right-[5%] w-[30%] h-[30%] bg-secondary/15 blur-[100px] rounded-full"
+    ></div>
+    <div
+      class="absolute top-[20%] left-[10%] w-32 h-32 border-4 border-primary/20 -rotate-12"
+      style="
+        transform: translateX(27.25px) translateY(-13.625px) rotate(49.05deg);
+      "
+    ></div>
+    <div
+      class="absolute bottom-[20%] right-[10%] w-48 h-48 border-4 border-secondary/20 rotate-45"
+      style="
+        transform: translateX(-21.8px) translateY(21.8px) rotate(-39.24deg);
+      "
+    ></div>
+    <div
+      class="absolute top-[10%] right-[20%] text-[10vw] font-sans font-black text-on-background/5 select-none"
+    >
+      01
+    </div>
+    <div
+      class="absolute bottom-[10%] left-[20%] text-[10vw] font-sans font-black text-on-background/5 select-none"
+    >
+      02
+    </div>
+  </div>
+</div>
+
+</div>
+    <div id="resume-modal" class="fixed inset-0 z-[1200] bg-black/90 backdrop-blur-md flex items-center justify-center p-0 md:p-4 lg:p-8 hidden" style="opacity: 1"
+  >
+    <div
+      class="w-full max-w-6xl h-full md:h-auto md:max-h-[calc(100vh-2rem)] lg:max-h-[90vh] bg-surface-container md:rounded-2xl rounded-none overflow-hidden flex flex-col shadow-2xl border border-outline-variant/20"
+      style="transform: none"
+    >
+      <div
+        class="p-4 border-b border-outline-variant/10 flex justify-between items-center bg-surface-container-high relative"
+      >
+        <h3 class="font-bold flex items-center gap-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-eye text-primary"
+            aria-hidden="true"
+          >
+            <path
+              d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"
+            ></path>
+            <circle cx="12" cy="12" r="3"></circle>
+          </svg>
+          Resume
+        </h3>
+        <div class="flex items-center gap-2">
+          <div class="hidden lg:flex items-center gap-2">
+            <button
+              class="zoom-out-btn p-2 hover:bg-white/5 rounded-lg shrink-0"
+              title="Zoom Out"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-zoom-out"
+                aria-hidden="true"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+                <line x1="8" x2="14" y1="11" y2="11"></line>
+              </svg></button
+            ><span id="zoom-level-text" class="text-xs font-mono w-12 text-center shrink-0"
+              >100%</span
+            ><button
+              class="zoom-in-btn p-2 hover:bg-white/5 rounded-lg shrink-0"
+              title="Zoom In"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-zoom-in"
+                aria-hidden="true"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+                <line x1="11" x2="11" y1="8" y2="14"></line>
+                <line x1="8" x2="14" y1="11" y2="11"></line>
+              </svg>
+            </button>
+            <div class="w-px h-6 bg-outline-variant/20 mx-2 shrink-0"></div>
+            <button class="p-2 hover:bg-white/10 rounded-lg text-error shrink-0 resume-close-btn" title="Close">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-x"
+                aria-hidden="true"
+              >
+                <path d="M18 6 6 18"></path>
+                <path d="m6 6 12 12"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="flex lg:hidden items-center gap-2">
+            <div class="hidden sm:flex items-center gap-1 mr-1">
+              <button class="zoom-out-btn p-2 hover:bg-white/5 rounded-lg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-zoom-out"
+                  aria-hidden="true"
+                >
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+                  <line x1="8" x2="14" y1="11" y2="11"></line>
+                </svg></button
+              ><button class="zoom-in-btn p-2 hover:bg-white/5 rounded-lg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-zoom-in"
+                  aria-hidden="true"
+                >
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+                  <line x1="11" x2="11" y1="8" y2="14"></line>
+                  <line x1="8" x2="14" y1="11" y2="11"></line>
+                </svg>
+              </button>
+            </div>
+            <button
+              class="p-2 hover:bg-white/5 rounded-lg text-primary"
+              title="Menu"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-menu"
+                aria-hidden="true"
+              >
+                <path d="M4 5h16"></path>
+                <path d="M4 12h16"></path>
+                <path d="M4 19h16"></path>
+              </svg></button
+            ><button class="p-2 hover:bg-white/10 rounded-lg text-error resume-close-btn" title="Close">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-x"
+                aria-hidden="true"
+              >
+                <path d="M18 6 6 18"></path>
+                <path d="m6 6 12 12"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex-1 overflow-auto p-4 md:p-16 bg-surface-container-lowest flex justify-center"
+      >
+        <div
+          id="resume-zoom-container"
+          class="transition-transform duration-200"
+          style="transform: scale(1); transform-origin: center top"
+        >
+          <div
+            class="bg-white text-black p-6 md:p-12 max-w-[800px] mx-auto shadow-2xl font-sans text-left"
+          >
+            <div
+              class="flex flex-col md:flex-row justify-between items-start border-b-4 border-black pb-8 mb-8 gap-4"
+            >
+              <div>
+                <h1
+                  class="text-3xl md:text-5xl font-black tracking-tighter uppercase mb-2"
+                >
+                  Christopher Fornesa
+                </h1>
+                <p
+                  class="text-lg md:text-xl font-bold text-gray-600 uppercase tracking-widest"
+                >
+                  Data &amp; Analytics Professional
+                </p>
+              </div>
+              <div class="text-left md:text-right text-xs md:text-sm font-bold">
+                <p>Houston, TX</p>
+                <p>(346) 762-3020</p>
+                <p>cfornesa@outlook.com</p>
+                <p>linkedin.com/in/cfornesa</p>
+              </div>
+            </div>
+            <section class="mb-10">
+              <h2
+                class="text-2xl font-black uppercase mb-4 border-b-2 border-black inline-block"
+              >
+                Professional Summary
+              </h2>
+              <p class="text-lg leading-relaxed">
+                Creative data and analytics professional with five years of
+                experience turning complex data into actionable insights.
+                Skilled in quantitative analysis and communication to uncover
+                policy insights and spread public awareness. Committed to
+                ethical, data-driven work that serves communities and transforms
+                the world.
+              </p>
+            </section>
+            <section class="mb-10">
+              <h2
+                class="text-2xl font-black uppercase mb-4 border-b-2 border-black inline-block"
+              >
+                Experience
+              </h2>
+              <div class="space-y-8">
+                <div>
+                  <div class="flex justify-between items-baseline mb-2">
+                    <h3 class="text-xl font-bold">Mobile Data SME</h3>
+                    <span class="font-bold">May 2024 – July 2025</span>
+                  </div>
+                  <p class="font-bold text-gray-600 mb-2">
+                    Chevron · Houston, TX
+                  </p>
+                  <ul class="list-disc pl-5 space-y-1">
+                    <li>
+                      Developed data solutions to provide clear, people-facing
+                      insights on mobility data.
+                    </li>
+                    <li>
+                      Managed SharePoint platforms, optimizing IT architecture
+                      and data governance.
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="flex justify-between items-baseline mb-2">
+                    <h3 class="text-xl font-bold">IT Analyst</h3>
+                    <span class="font-bold">Dec 2020 – Apr 2024</span>
+                  </div>
+                  <p class="font-bold text-gray-600 mb-2">
+                    Chevron · Houston, TX
+                  </p>
+                  <ul class="list-disc pl-5 space-y-1">
+                    <li>
+                      Delivered enterprise-level mobility support, translating
+                      complex technical information for diverse audiences.
+                    </li>
+                    <li>
+                      Partnered with leadership to improve workflows and align
+                      data systems with organizational goals.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <section class="mb-10">
+              <h2
+                class="text-2xl font-black uppercase mb-4 border-b-2 border-black inline-block"
+              >
+                Education
+              </h2>
+              <div class="space-y-4">
+                <div>
+                  <div class="flex justify-between items-baseline">
+                    <h3 class="text-xl font-bold">MS in Data Science</h3>
+                    <span class="font-bold">Dec 2025</span>
+                  </div>
+                  <p class="font-bold text-gray-600">
+                    Boston University • GPA 4.0
+                  </p>
+                </div>
+                <div>
+                  <div class="flex justify-between items-baseline">
+                    <h3 class="text-xl font-bold">BA in Liberal Studies</h3>
+                    <span class="font-bold">June 2018</span>
+                  </div>
+                  <p class="font-bold text-gray-600">
+                    University of Houston • GPA 4.0
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="fixed top-0 left-0 w-full h-full pointer-events-none -z-10 opacity-30 overflow-hidden"
+  >
+    <div
+      class="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] bg-primary/20 blur-[120px] rounded-full"
+    ></div>
+    <div
+      class="absolute top-[40%] right-[5%] w-[30%] h-[30%] bg-secondary/15 blur-[100px] rounded-full"
+    ></div>
+    <div
+      class="absolute top-[20%] left-[10%] w-32 h-32 border-4 border-primary/20 -rotate-12"
+      style="
+        transform: translateX(30.03px) translateY(-15.015px) rotate(54.054deg);
+      "
+    ></div>
+    <div
+      class="absolute bottom-[20%] right-[10%] w-48 h-48 border-4 border-secondary/20 rotate-45"
+      style="
+        transform: translateX(-24.024px) translateY(24.024px)
+          rotate(-43.2432deg);
+      "
+    ></div>
+    <div
+      class="absolute top-[10%] right-[20%] text-[10vw] font-sans font-black text-on-background/5 select-none"
+    >
+      01
+    </div>
+    <div
+      class="absolute bottom-[10%] left-[20%] text-[10vw] font-sans font-black text-on-background/5 select-none"
+    >
+      02
+    </div>
+  </div>
+</div>
+  </body>
+</html>
+
+
+  

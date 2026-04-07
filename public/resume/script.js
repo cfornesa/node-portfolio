@@ -292,3 +292,33 @@ function clearChat() {
     loadingIndicator.style.display = 'none';
     updateSendButton();
 }
+
+// Get the domain name for the current page
+const domainName = window.location.hostname;
+
+// Get all instances of class "brand"
+const brandElements = document.querySelectorAll('.brand');
+
+if (domainName === 'agents.augmenthumankind.com') {
+    brandElements.forEach(element => {
+        element.textContent = 'Augment Humankind';
+    });
+} else if (domainName === 'chris.com.ph' || domainName === 'chrisfornesa.com' || domainName === 'cfornesa.com') {
+    brandElements.forEach(element => {
+        element.textContent = 'Chris Fornesa';
+    });
+} else if (domainName === 'localhost') {
+    brandElements.forEach(element => {
+        element.textContent = 'Test Case';
+    });
+} else {
+    brandElements.forEach(element => {
+        element.textContent = 'Augment Humankind';
+    });
+    headerNav.innerHTML = `
+        <a href="/resume" class="nav-link nav-link--active">Resume Guide</a>
+        <a href="/art" class="nav-link">Art Guide</a>
+        <a href="/tanaga" class="nav-link">Tanaga Guide</a>
+        <a href="/" class="nav-link">Home</a>
+    `;
+}

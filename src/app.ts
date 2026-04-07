@@ -35,10 +35,12 @@ export async function createApp() {
   app.use('/resume', express.static(path.join(publicDir, 'resume')));
   app.use('/art', express.static(path.join(publicDir, 'art')));
   app.use('/tanaga', express.static(path.join(publicDir, 'tanaga')));
+  app.use('/readme', express.static(path.join(publicDir, 'readme')));
+  app.use('/about', express.static(path.join(publicDir, 'about')));
   // Home page and shared assets
   app.use(express.static(publicDir));
 
-  // ── Health ────────────────────────���────────────────────────────────
+  // ── Health ────────────────────────────────────────────────────────
   app.get('/health', (_req, res) => {
     res.json({
       status: 'ok',
@@ -47,7 +49,7 @@ export async function createApp() {
     });
   });
 
-  // ── API Routes ────────────────────────��────────────────────────────
+  // ── API Routes ────────────────────────────────────────────────────
   app.use('/', homeRouter);          // POST /chat, GET /rag/status, POST /rag/reindex
   app.use('/resume', resumeRouter);  // POST /resume/build, /resume/chat, /resume/rag/*
   app.use('/art', artRouter);        // POST /art/chat, /art/rag/*
@@ -62,6 +64,12 @@ export async function createApp() {
   );
   app.get('/tanaga', (_req, res) =>
     res.sendFile(path.join(publicDir, 'tanaga', 'index.html')),
+  );
+  app.get('/readme', (_req, res) =>
+    res.sendFile(path.join(publicDir, 'readme', 'index.html')),
+  );
+  app.get('/about', (_req, res) =>
+    res.sendFile(path.join(publicDir, 'about', 'index.html')),
   );
   app.get('/chat', (_req, res) =>
     res.sendFile(path.join(publicDir, 'home', 'index.html')),

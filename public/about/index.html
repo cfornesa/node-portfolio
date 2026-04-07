@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Augment Humankind | AI Will Empower Humanity</title>
+    <title>Augment Humankind | AI Will Empower Humanity - About Me</title>
     <meta name="description" content="Agents by Augment Humankind, a company focused on leveraging AI to empower humanity." />
     <meta name="keywords" content="Augment, Humankind, Augment Humankind, Data Science, Analytics, Power BI, Python, Machine Learning, Portfolio" />
     <meta property="og:title" content="Augment Humankind | AI Will Empower Humanity" />
@@ -21,7 +21,7 @@
       })();
     </script>
     <script type="module" crossorigin src="/assets/script.js"></script>
-    <script type="module" crossorigin src="/assets/route.js"></script>
+    <script type="module" crossorigin src="./routes.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/styles.css">
   </head>
   <body>
@@ -36,23 +36,23 @@
       class="flex justify-between items-center px-6 py-4 max-w-screen-2xl mx-auto relative"
     >
       <div
-        class="text-2xl font-black tracking-tighter text-primary uppercase font-sans"
+        class="brand text-2xl font-black tracking-tighter text-primary uppercase font-sans" style="text-transform: uppercase"
       >
         AUGMENT HUMANKIND
       </div>
-      <div class="hidden lg:flex items-center gap-8 font-semibold">
+      <div class="hidden lg:flex items-center gap-8 font-semibold" id="headerNav">
         <a class="text-on-surface-variant hover:text-primary transition-colors"
-          href="/">Home</a>
+          href="../">Home</a>
         <a class="text-on-surface-variant hover:text-primary transition-colors"
-          href="/about">About Me</a>
+          href="../about">About Me</a>
         <a class="text-on-surface-variant hover:text-primary transition-colors"
-          href="/readme">Readme</a>
+          href="../readme">Readme</a>
         <a class="text-on-surface-variant hover:text-primary transition-colors"
-          href="/resume">Resume</a>
+          href="../resume">Resume</a>
         <a class="text-on-surface-variant hover:text-primary transition-colors"
-          href="/art">Art</a>
+          href="../art">Art</a>
         <a class="text-on-surface-variant hover:text-primary transition-colors"
-          href="/tanaga">Tanaga</a>
+          href="../tanaga">Tanaga</a>
       </div>
       <div class="hidden lg:flex items-center gap-4">
         <button class="text-on-surface-variant hover:text-primary transition-colors p-2 theme-toggle-btn" title="Toggle Theme">
@@ -107,15 +107,13 @@
       id="mobile-menu"
       class="lg:hidden bg-surface-container border-b border-outline/10 overflow-hidden hidden"
     >
-      <div
-        class="flex flex-col p-6 gap-4 font-bold uppercase tracking-widest text-sm"
-      >
-        <a class="py-3 border-b border-outline/5 hover:text-primary transition-colors" href="/">Homes</a>
-        <a class="py-3 border-b border-outline/5 hover:text-primary transition-colors" href="/about">About Me</a>
-        <a class="py-3 border-b border-outline/5 hover:text-primary transition-colors" href="/readme">Readme</a>
-        <a class="py-3 border-b border-outline/5 hover:text-primary transition-colors" href="/resume">Resume Guide</a>
-        <a class="py-3 border-b border-outline/5 hover:text-primary transition-colors" href="/art">Art Guide</a>
-        <a class="py-3 border-b border-outline/5 hover:text-primary transition-colors" href="/tanaga">Tanaga Guide</a>
+      <div class="flex flex-col p-6 gap-4 font-bold uppercase tracking-widest text-sm" id="hamNav">
+        <a class="py-3 border-b border-outline/5 hover:text-primary transition-colors" href="../">Home</a>
+        <a class="py-3 border-b border-outline/5 hover:text-primary transition-colors" href="../about">About Me</a>
+        <a class="py-3 border-b border-outline/5 hover:text-primary transition-colors" href="../readme">Readme</a>
+        <a class="py-3 border-b border-outline/5 hover:text-primary transition-colors" href="../resume">Resume Guide</a>
+        <a class="py-3 border-b border-outline/5 hover:text-primary transition-colors" href="../art">Art Guide</a>
+        <a class="py-3 border-b border-outline/5 hover:text-primary transition-colors" href="../tanaga">Tanaga Guide</a>
       </div>
     </div>
   </nav>
@@ -128,8 +126,8 @@
         The Synthetic Pulse
       </p>
     </div>
-    <nav class="flex-1">
-      <a class="flex items-center gap-3 bg-primary/10 text-primary border-r-4 border-primary p-4 uppercase text-xs tracking-[0.05em] hover:translate-x-1 transition-transform duration-300" href="./">
+    <nav class="flex-1" id="sideNav">
+      <a class="flex items-center gap-3 text-on-surface-variant p-4 hover:bg-white/5 uppercase text-xs tracking-[0.05em] hover:translate-x-1 transition-transform duration-300" href="../">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="18"
@@ -145,7 +143,7 @@
           <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
           <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
         </svg>Home</a>
-        <a class="flex items-center gap-3 text-on-surface-variant p-4 hover:bg-white/5 uppercase text-xs tracking-[0.05em] hover:translate-x-1 transition-transform duration-300" href="./about">
+        <a class="flex items-center gap-3 bg-primary/10 text-primary border-r-4 border-primary p-4 uppercase text-xs tracking-[0.05em] hover:translate-x-1 transition-transform duration-300" href="../about">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="18"
@@ -161,7 +159,7 @@
             <path d="M15 20v-2a4 4 0 0 0-4-4H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-6a4 4 0 0 0-4 4v2"></path>
             <circle cx="12" cy="7" r="4"></circle>
           </svg>About Me</a>
-        <a class="flex items-center gap-3 text-on-surface-variant p-4 hover:bg-white/5 uppercase text-xs tracking-[0.05em] hover:translate-x-1 transition-transform duration-300" href="./readme">
+        <a class="flex items-center gap-3 text-on-surface-variant p-4 hover:bg-white/5 uppercase text-xs tracking-[0.05em] hover:translate-x-1 transition-transform duration-300" href="../readme">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="18"
@@ -209,7 +207,7 @@
             class="mb-6 inline-block bg-primary text-on-primary px-4 py-1 font-black uppercase text-sm -skew-x-12 font-sans"
             style="opacity: 1; transform: none"
           >
-            Augment Humankind
+            Christopher Fornesa
           </div>
           <h1
             class="text-6xl md:text-[10vw] font-sans font-black tracking-tighter leading-[0.85] mb-12 uppercase"
@@ -262,10 +260,10 @@
             style="opacity: 1; transform: rotate(-5deg)"
           >
             <img
-              alt="Augment Humankind"
+              alt="Christopher Fornesa"
               class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
               referrerpolicy="no-referrer"
-              src="/guide.png"
+              src="/profile.JPG"
             />
           </div>
           <div
@@ -384,10 +382,10 @@
             class="brutal-border aspect-square overflow-hidden bg-primary/20 -rotate-3"
           >
             <img
-              alt="Augment Humankind"
+              alt="Chris Fornesa"
               class="w-full h-full object-cover grayscale"
               referrerpolicy="no-referrer"
-              src="/guide.png"
+              src="/profile.JPG"
             />
           </div>
         </div>
@@ -1696,7 +1694,7 @@
                 <h1
                   class="text-3xl md:text-5xl font-black tracking-tighter uppercase mb-2"
                 >
-                  Augment Humankind
+                  Christopher Fornesa
                 </h1>
                 <p
                   class="text-lg md:text-xl font-bold text-gray-600 uppercase tracking-widest"

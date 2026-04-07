@@ -161,3 +161,19 @@ function clearChat() {
     setLoadingState(false);
     updateSendButton();
 }
+
+// Get the domain name for the current page
+const domainName = window.location.hostname;
+
+// Get all instances of class "brand"
+const brandElements = document.querySelectorAll('.brand');
+
+if (domainName === 'chris.com.ph' || domainName === 'chrisfornesa.com' || domainName === 'cfornesa.com') {
+    brandElements.forEach(element => {
+        element.textContent = 'Chris Fornesa';
+    });
+} else {
+    brandElements.forEach(element => {
+        element.textContent = 'Test Case';
+    });
+}
