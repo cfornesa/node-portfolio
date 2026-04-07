@@ -299,11 +299,13 @@ const domainName = window.location.hostname;
 // Get all instances of class "brand"
 const brandElements = document.querySelectorAll('.brand');
 
-if (domainName === 'agents.augmenthumankind.com') {
-    brandElements.forEach(element => {
-        element.textContent = 'Augment Humankind';
-    });
-} else if (domainName === 'chris.com.ph' || domainName === 'chrisfornesa.com' || domainName === 'cfornesa.com') {
+// Get the #headerNav element
+const headerNav = document.getElementById('headerNav');
+
+// Get the #toolCards element
+const toolCards = document.getElementById('toolCards');
+
+if (domainName === 'chris.com.ph' || domainName === 'chrisfornesa.com' || domainName === 'cfornesa.com') {
     brandElements.forEach(element => {
         element.textContent = 'Chris Fornesa';
     });
@@ -311,6 +313,46 @@ if (domainName === 'agents.augmenthumankind.com') {
     brandElements.forEach(element => {
         element.textContent = 'Test Case';
     });
+    headerNav.innerHTML = `
+        <a href="/resume" class="nav-link nav-link--active">Resume Guide</a>
+        <a href="/art" class="nav-link">Art Guide</a>
+        <a href="/tanaga" class="nav-link">Tanaga Guide</a>
+        <a href="/" class="nav-link">Home</a>
+    `;
+    toolCards.innerHTML = `
+        <a href="/resume" class="tool-card">
+            <div class="tool-card-icon">
+                <span class="material-symbols-outlined">description</span>
+            </div>
+            <div class="tool-card-body">
+                <p class="tool-card-title">Resume Guide</p>
+                <p class="tool-card-desc">Build a high-impact resume with AI, then refine it through conversation.</p>
+            </div>
+            <span class="tool-card-arrow material-symbols-outlined">arrow_forward</span>
+        </a>
+
+        <a href="/art" class="tool-card">
+            <div class="tool-card-icon">
+                <span class="material-symbols-outlined">palette</span>
+            </div>
+            <div class="tool-card-body">
+                <p class="tool-card-title">Art Guide</p>
+                <p class="tool-card-desc">Explore techniques, styles, and mediums with a studio-grade art assistant.</p>
+            </div>
+            <span class="tool-card-arrow material-symbols-outlined">arrow_forward</span>
+        </a>
+
+        <a href="https://augmenthumankind.com" class="tool-card">
+            <div class="tool-card-icon">
+                <span class="material-symbols-outlined">home</span>
+            </div>
+            <div class="tool-card-body">
+                <p class="tool-card-title">Home</p>
+                <p class="tool-card-desc">Return to the main website.</p>
+            </div>
+            <span class="tool-card-arrow material-symbols-outlined">arrow_forward</span>
+        </a>
+    `;
 } else {
     brandElements.forEach(element => {
         element.textContent = 'Augment Humankind';
@@ -320,5 +362,39 @@ if (domainName === 'agents.augmenthumankind.com') {
         <a href="/art" class="nav-link">Art Guide</a>
         <a href="/tanaga" class="nav-link">Tanaga Guide</a>
         <a href="/" class="nav-link">Home</a>
+    `;
+    toolCards.innerHTML = `
+        <a href="/resume" class="tool-card">
+            <div class="tool-card-icon">
+                <span class="material-symbols-outlined">description</span>
+            </div>
+            <div class="tool-card-body">
+                <p class="tool-card-title">Resume Guide</p>
+                <p class="tool-card-desc">Build a high-impact resume with AI, then refine it through conversation.</p>
+            </div>
+            <span class="tool-card-arrow material-symbols-outlined">arrow_forward</span>
+        </a>
+
+        <a href="/art" class="tool-card">
+            <div class="tool-card-icon">
+                <span class="material-symbols-outlined">palette</span>
+            </div>
+            <div class="tool-card-body">
+                <p class="tool-card-title">Art Guide</p>
+                <p class="tool-card-desc">Explore techniques, styles, and mediums with a studio-grade art assistant.</p>
+            </div>
+            <span class="tool-card-arrow material-symbols-outlined">arrow_forward</span>
+        </a>
+
+        <a href="https://augmenthumankind.com" class="tool-card">
+            <div class="tool-card-icon">
+                <span class="material-symbols-outlined">home</span>
+            </div>
+            <div class="tool-card-body">
+                <p class="tool-card-title">Home</p>
+                <p class="tool-card-desc">Return to the main website.</p>
+            </div>
+            <span class="tool-card-arrow material-symbols-outlined">arrow_forward</span>
+        </a>
     `;
 }
