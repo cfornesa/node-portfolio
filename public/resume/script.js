@@ -314,10 +314,11 @@ if (domainName === 'chris.com.ph' || domainName === 'chrisfornesa.com' || domain
         element.textContent = 'Test Case';
     });
     headerNav.innerHTML = `
+        <a href="/" class="nav-link">Home</a>
         <a href="/resume" class="nav-link nav-link--active">Resume Guide</a>
         <a href="/art" class="nav-link">Art Guide</a>
         <a href="/tanaga" class="nav-link">Tanaga Guide</a>
-        <a href="/" class="nav-link">Home</a>
+        <a href="https://augmenthumankind.com" class="nav-link">Main Site</a>
     `;
     toolCards.innerHTML = `
         <a href="/resume" class="tool-card">
@@ -358,10 +359,11 @@ if (domainName === 'chris.com.ph' || domainName === 'chrisfornesa.com' || domain
         element.textContent = 'Augment Humankind';
     });
     headerNav.innerHTML = `
+        <a href="/" class="nav-link">Home</a>
         <a href="/resume" class="nav-link nav-link--active">Resume Guide</a>
         <a href="/art" class="nav-link">Art Guide</a>
         <a href="/tanaga" class="nav-link">Tanaga Guide</a>
-        <a href="/" class="nav-link">Home</a>
+        <a href="https://augmenthumankind.com" class="nav-link">Main Site</a>
     `;
     toolCards.innerHTML = `
         <a href="/resume" class="tool-card">

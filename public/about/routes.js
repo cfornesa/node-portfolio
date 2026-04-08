@@ -52,7 +52,6 @@ if (domainName === 'chris.com.ph' || domainName === 'chrisfornesa.com' || domain
     // Replace HTML inside #hamNav with the following
     hamNav.innerHTML = `
       <a class="py-3 border-b border-outline/5 hover:text-primary transition-colors" href="../">Home</a>
-      <a class="py-3 border-b border-outline/5 hover:text-primary transition-colors" href="../about">About Me</a>
       <a class="py-3 border-b border-outline/5 hover:text-primary transition-colors" href="../readme">Readme</a>
       <a class="py-3 border-b border-outline/5 hover:text-primary transition-colors" href="../chat">Ask Chris</a>
       <a class="py-3 border-b border-outline/5 hover:text-primary transition-colors" href="../resume">Resume Guide</a>
@@ -62,12 +61,13 @@ if (domainName === 'chris.com.ph' || domainName === 'chrisfornesa.com' || domain
 
     // Replace HTML inside #headerNav with the following
     headerNav.innerHTML = `
+      <span class="text-on-surface-variant transition-colors">Site:</span>
       <a class="text-on-surface-variant hover:text-primary transition-colors"
         href="../">Home</a>
       <a class="text-on-surface-variant hover:text-primary transition-colors"
-        href="../about">About Me</a>
-      <a class="text-on-surface-variant hover:text-primary transition-colors"
         href="../readme">Readme</a>
+      <span class="text-on-surface-variant transition-colors">|</span>
+      <span class="text-on-surface-variant transition-colors">Agents:</span>
       <a class="text-on-surface-variant hover:text-primary transition-colors"
         href="../chat">Ask</a>
       <a class="text-on-surface-variant hover:text-primary transition-colors"
