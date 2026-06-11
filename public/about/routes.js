@@ -11,8 +11,9 @@ const hamNav = document.getElementById('hamNav');
 const headerNav = document.getElementById('headerNav');
 
 // Reset brand class text content based on domain
-// if (domainName === 'chris.com.ph' || domainName === 'chrisfornesa.com' || domainName === 'cfornesa.com' || domainName === 'localhost') 
-if (domainName === 'chris.com.ph' || domainName === 'chrisfornesa.com' || domainName === 'cfornesa.com') 
+// if (domainName === 'chris.com.ph' || domainName === 'cfornesa.com' || domainName === 'localhost') 
+// if (domainName === 'chris.com.ph' || domainName === 'cfornesa.com') 
+if (domainName === 'chris.com.ph') 
 {
     // Replace HTML inside #sideNav with the following
     sideNav.innerHTML = `

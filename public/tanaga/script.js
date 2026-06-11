@@ -202,7 +202,7 @@ if (domainName === 'chris.com.ph' || domainName === 'chrisfornesa.com' || domain
         <a href="/resume" class="nav-link">Resume Guide</a>
         <a href="/art" class="nav-link">Art Guide</a>
         <a href="/tanaga" class="nav-link nav-link--active">Tanaga Guide</a>
-        <a href="https://augmenthumankind.com" class="nav-link">Main Site</a>
+        <a href="https://cfornesa.com" class="nav-link">Main Site</a>
     `;
     toolCards.innerHTML = `
         <a href="/resume" class="tool-card">
@@ -227,7 +227,7 @@ if (domainName === 'chris.com.ph' || domainName === 'chrisfornesa.com' || domain
             <span class="tool-card-arrow material-symbols-outlined">arrow_forward</span>
         </a>
 
-        <a href="https://augmenthumankind.com" class="tool-card">
+        <a href="https://cfornesa.com" class="tool-card">
             <div class="tool-card-icon">
                 <span class="material-symbols-outlined">home</span>
             </div>
@@ -247,7 +247,7 @@ if (domainName === 'chris.com.ph' || domainName === 'chrisfornesa.com' || domain
         <a href="/resume" class="nav-link">Resume Guide</a>
         <a href="/art" class="nav-link">Art Guide</a>
         <a href="/tanaga" class="nav-link nav-link--active">Tanaga Guide</a>
-        <a href="https://augmenthumankind.com" class="nav-link">Main Site</a>
+        <a href="https://cfornesa.com" class="nav-link">Main Site</a>
     `;
     toolCards.innerHTML = `
         <a href="/resume" class="tool-card">
@@ -272,7 +272,7 @@ if (domainName === 'chris.com.ph' || domainName === 'chrisfornesa.com' || domain
             <span class="tool-card-arrow material-symbols-outlined">arrow_forward</span>
         </a>
 
-        <a href="https://augmenthumankind.com" class="tool-card">
+        <a href="https://cfornesa.com" class="tool-card">
             <div class="tool-card-icon">
                 <span class="material-symbols-outlined">home</span>
             </div>
