@@ -37,6 +37,8 @@ export async function createApp() {
   app.use('/tanaga', express.static(path.join(publicDir, 'tanaga')));
   app.use('/readme', express.static(path.join(publicDir, 'readme')));
   app.use('/about', express.static(path.join(publicDir, 'about')));
+  app.use('/portfolio', express.static(path.join(publicDir, 'portfolio')));
+  app.use('/portfolio/files', express.static(path.join(process.cwd(), 'portfolio')));
   // Home page and shared assets
   app.use(express.static(publicDir));
 
@@ -70,6 +72,15 @@ export async function createApp() {
   );
   app.get('/about', (_req, res) =>
     res.sendFile(path.join(publicDir, 'about', 'index.html')),
+  );
+  app.get('/portfolio', (_req, res) =>
+    res.sendFile(path.join(publicDir, 'portfolio', 'index.html')),
+  );
+  app.get('/portfolio/deconstruct-hate-speech', (_req, res) =>
+    res.sendFile(path.join(publicDir, 'portfolio', 'deconstruct-hate-speech', 'index.html')),
+  );
+  app.get('/portfolio/algorithmic-political-bias', (_req, res) =>
+    res.sendFile(path.join(publicDir, 'portfolio', 'algorithmic-political-bias', 'index.html')),
   );
   app.get('/chat', (_req, res) =>
     res.sendFile(path.join(publicDir, 'home', 'index.html')),

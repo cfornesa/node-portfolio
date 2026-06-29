@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algorithmic Political Bias | Chris Fornesa Portfolio</title>
+    <meta name="description" content="Mitigating Algorithmic Political Bias Through Ethical AI Policy and Governance, by Chris Fornesa." />
+    <meta name="keywords" content="Chris Fornesa, Algorithmic Bias, AI Policy, Ethics, Data Science, Portfolio" />
+    <meta property="og:title" content="Algorithmic Political Bias | Chris Fornesa Portfolio" />
+    <meta property="og:description" content="Mitigating Algorithmic Political Bias Through Ethical AI Policy and Governance, by Chris Fornesa." />
+    <meta property="og:type" content="website" />
+    <script>
+      (function() {
+        var saved = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', saved);
+        if (saved === 'dark') {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/script.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/styles.css">
+    <style>
+      .pdf-embed-wrap {
+        width: 100%;
+        height: 85vh;
+        border: 4px solid var(--on-background);
+        background: var(--surface);
+        overflow: hidden;
+      }
+      .pdf-embed-wrap object {
+        width: 100%;
+        height: 100%;
+      }
+      .pdf-fallback {
+        padding: 2rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+<div
+  class="min-h-screen font-body selection:bg-primary/30 bg-background text-on-background"
+>
+  <nav
+    class="fixed top-0 w-full z-50 bg-surface-nav/90 backdrop-blur-xl border-b border-outline/10"
+  >
+    <div
+      class="flex justify-between items-center px-6 py-4 max-w-screen-2xl mx-auto relative"
+    >
+      <div
+        class="text-2xl font-black tracking-tighter text-primary uppercase font-sans"
+      >
+        CHRIS FORNESA
+      </div>
+      <div class="hidden lg:flex items-center gap-8 font-semibold" id="headerNav">
+        <div class="hidden lg:flex items-center gap-8 font-semibold">
+          <span class="text-on-surface-variant transition-colors">Site:</span>
+          <a class="text-on-surface-variant hover:text-primary transition-colors"
+            href="/">Home</a>
+          <a class="text-on-surface-variant hover:text-primary transition-colors"
+            href="/about">About</a>
+          <a class="text-on-surface-variant hover:text-primary transition-colors"
+            href="/portfolio">Portfolio</a>
+          <a class="text-on-surface-variant hover:text-primary transition-colors"
+            href="/readme">Readme</a>
+          <a class="text-on-surface-variant hover:text-primary transition-colors"
+            href="https://augmenthumankind.com" target="_blank" rel="noopener">AI Art</a>
+          <a class="text-on-surface-variant hover:text-primary transition-colors"
+            href="https://fornesusart.com" target="_blank" rel="noopener">"Real" Art</a>
+        </div>
+      </div>
+      <div class="hidden lg:flex items-center gap-4">
+        <button class="text-on-surface-variant hover:text-primary transition-colors p-2 theme-toggle-btn" title="Toggle Theme">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-sun"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="m4.93 4.93 1.41 1.41"></path>
+            <path d="m17.66 17.66 1.41 1.41"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="m6.34 17.66-1.41 1.41"></path>
+            <path d="m19.07 4.93-1.41 1.41"></path>
+          </svg></button
+        ><button id="resume-toggle-btn-2" class="resume-toggle-btn brutal-border bg-primary text-on-primary px-6 py-2 font-black uppercase text-xs tracking-widest hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
+          Resume
+        </button>
+      </div>
+      <button id="mobile-menu-btn" class="lg:hidden p-2 text-primary hover:bg-primary/10 rounded-lg transition-all border border-primary/20" aria-label="Toggle Menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-menu"
+          aria-hidden="true"
+        >
+          <path d="M4 5h16"></path>
+          <path d="M4 12h16"></path>
+          <path d="M4 19h16"></path>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="lg:hidden bg-surface-container border-b border-outline/10 overflow-hidden hidden">
+      <div class="flex flex-col p-6 gap-4 font-bold uppercase tracking-widest text-sm" id="hamNav">
+        <a class="py-3 border-b border-outline/5 hover:text-primary transition-colors" href="/">Home</a>
+        <a class="py-3 border-b border-outline/5 hover:text-primary transition-colors" href="/about">About Me</a>
+        <a class="py-3 border-b border-outline/5 hover:text-primary transition-colors" href="/portfolio">Portfolio</a>
+        <a class="py-3 border-b border-outline/5 hover:text-primary transition-colors" href="/readme">Readme</a>
+        <a class="py-3 border-b border-outline/5 hover:text-primary transition-colors" href="https://augmenthumankind.com" target="_blank" rel="noopener">AI Art</a>
+        <a class="py-3 border-b border-outline/5 hover:text-primary transition-colors" href="https://fornesusart.com" target="_blank" rel="noopener">"Real" Art</a>
+      </div>
+    </div>
+  </nav>
+  <aside class="hidden xl:flex fixed left-0 top-0 h-full w-64 z-40 bg-surface-container-low/60 backdrop-blur-2xl border-r border-outline-variant/10 flex-col pt-24 pb-8 shadow-2xl">
+    <div class="px-6 mb-8">
+      <h2 class="text-primary font-bold text-lg">Navigation</h2>
+      <p class="text-on-surface-variant text-[10px] uppercase tracking-widest">
+        The Synthetic Pulse
+      </p>
+    </div>
+    <nav class="flex-1" id="sideNav">
+      <a class="flex items-center gap-3 text-on-surface-variant p-4 hover:bg-white/5 uppercase text-xs tracking-[0.05em] hover:translate-x-1 transition-transform duration-300" href="/">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-house"
+          aria-hidden="true">
+          <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
+          <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+        </svg>Home</a>
+      <a class="flex items-center gap-3 text-on-surface-variant p-4 hover:bg-white/5 uppercase text-xs tracking-[0.05em] hover:translate-x-1 transition-transform duration-300" href="/about">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-user"
+            aria-hidden="true">
+            <path d="M15 20v-2a4 4 0 0 0-4-4H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-6a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>About Me</a>
+        <a class="flex items-center gap-3 bg-primary/10 text-primary border-r-4 border-primary p-4 uppercase text-xs tracking-[0.05em] hover:translate-x-1 transition-transform duration-300" href="/portfolio">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-briefcase"
+            aria-hidden="true">
+            <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            <rect width="20" height="14" x="2" y="6" rx="2"></rect>
+          </svg>Portfolio</a>
+        <a class="flex items-center gap-3 text-on-surface-variant p-4 hover:bg-white/5 uppercase text-xs tracking-[0.05em] hover:translate-x-1 transition-transform duration-300" href="/readme">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-file-text"
+            aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          </svg>Readme</a>
+        <a class="flex items-center gap-3 text-on-surface-variant p-4 hover:bg-white/5 uppercase text-xs tracking-[0.05em] hover:translate-x-1 transition-transform duration-300" href="https://augmenthumankind.com" target="_blank" rel="noopener">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-arrow-up-right"
+            aria-hidden="true">
+            <path d="M7 7h10v10"></path>
+            <path d="M7 17 17 7"></path>
+          </svg>AI Art</a>
+        <a class="flex items-center gap-3 text-on-surface-variant p-4 hover:bg-white/5 uppercase text-xs tracking-[0.05em] hover:translate-x-1 transition-transform duration-300" href="https://fornesusart.com" target="_blank" rel="noopener">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-arrow-up-right"
+            aria-hidden="true">
+            <path d="M7 7h10v10"></path>
+            <path d="M7 17 17 7"></path>
+          </svg>"Real" Art</a>
+    </nav>
+    <div class="px-6">
+      <a href="/portfolio" class="w-full py-4 border border-primary/30 text-primary font-bold uppercase text-[10px] tracking-widest hover:bg-primary hover:text-on-primary transition-all text-center block">&larr; All Portfolio</a>
+    </div>
+  </aside>
+  <main class="xl:pl-64 pt-24 min-h-screen grid-bg">
+    <section class="px-6 md:px-12 py-20">
+      <div class="max-w-5xl mx-auto w-full">
+        <p class="text-on-surface-variant text-xs mb-4 uppercase tracking-widest">DX 701: Responsible and Ethical Data Science and AI &middot; Boston University &middot; Aug 2025</p>
+        <h1 class="text-5xl md:text-6xl font-sans font-black tracking-tighter leading-[0.95] mb-10 uppercase text-primary -skew-x-3">Algorithmic Political Bias</h1>
+
+        <div class="space-y-6 text-on-surface-variant text-lg leading-relaxed mb-12 max-w-3xl">
+          <p>This paper examines how algorithms &mdash; not just human bias &mdash; actively manufacture political polarization. Recommendation and clustering systems sort users into &ldquo;epistemic bubbles&rdquo; that reinforce existing beliefs and can radicalize people who didn&rsquo;t start out polarized, while two persistent myths (the &ldquo;virtuality fallacy&rdquo; that online harm isn&rsquo;t fully &ldquo;real,&rdquo; and the &ldquo;neutrality fallacy&rdquo; that algorithms are objective) let platforms avoid accountability.</p>
+          <p>I evaluate a concrete legislative response &mdash; H.R. 4624, a U.S. House bill that would have required transparency for algorithmic processes using personal data and created federal oversight with real civil penalties &mdash; alongside longer-term AI governance proposals for keeping systems aligned and auditable as they scale.</p>
+          <p><strong class="text-on-surface">My takeaway:</strong> technical fixes &mdash; better classifiers, better moderation models &mdash; only go so far. Without enforceable transparency requirements and real consequences for harm, the incentive for platforms to address algorithmic political bias stays weak, which is exactly why I see AI ethics and policy as inseparable from the modeling work itself.</p>
+        </div>
+
+        <div class="flex flex-wrap gap-4 mb-8">
+          <a href="/portfolio/files/Algorithmic-Political-Bias.pdf" target="_blank" rel="noopener" class="brutal-border bg-primary text-on-primary font-black px-6 py-3 flex items-center gap-2 hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all uppercase tracking-tighter text-sm">Open in New Tab
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true">
+              <path d="M7 7h10v10"></path>
+              <path d="M7 17 17 7"></path>
+            </svg>
+          </a>
+          <a href="/portfolio/files/Algorithmic-Political-Bias.pdf" download class="border-4 border-on-background text-on-background font-black px-6 py-3 hover:bg-on-background hover:text-background transition-all uppercase tracking-tighter text-sm">Download PDF</a>
+        </div>
+
+        <div class="pdf-embed-wrap">
+          <object data="/portfolio/files/Algorithmic-Political-Bias.pdf" type="application/pdf">
+            <div class="pdf-fallback">
+              <p class="text-on-surface-variant mb-4">Your browser can&rsquo;t display this PDF inline.</p>
+              <a href="/portfolio/files/Algorithmic-Political-Bias.pdf" class="text-primary font-bold uppercase tracking-widest text-sm">Download the PDF instead &rarr;</a>
+            </div>
+          </object>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+</div>
+  </body>
+</html>
