@@ -3,173 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ask Chris Guide - Agentic Tools</title>
+    <title>Ask Chris — Agentic Tools</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/home/home.css">
+    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="/guide-layout.css">
     <script>
         (function() {
             var saved = localStorage.getItem('theme') || 'light';
             document.documentElement.setAttribute('data-theme', saved);
+            if (saved === 'dark') { document.documentElement.classList.add('dark'); }
         })();
     </script>
 </head>
 <body>
 
-    <header class="app-header">
-        <div class="header-content">
-            <a href="/" class="header-brand">
-                <span class="material-symbols-outlined brand-icon">auto_awesome</span>
-                <span class="brand-name brand">Chris Fornesa</span>
-            </a>
-            <nav id="headerNav" class="header-nav">
-                <a href="/" class="nav-link">Home</a>
-                <a href="/chat" class="nav-link nav-link--active">Ask Chris</a>
-                <a href="/resume" class="nav-link">Resume Guide</a>
-                <a href="/art" class="nav-link">Art Guide</a>
-                <a href="/tanaga" class="nav-link">Tanaga Guide</a>
-            </nav>
-            <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle day/night mode">
-                <span class="material-symbols-outlined" id="themeIcon">light_mode</span>
-            </button>
-            <button id="navMenuBtn" class="nav-hamburger-btn" aria-label="Open navigation menu" aria-controls="headerNav" aria-expanded="false">
+    <!-- ── Top Nav ──────────────────────────────────────────── -->
+    <nav class="guide-nav">
+        <div class="guide-nav-inner">
+            <a href="/" class="guide-nav-brand">CHRIS FORNESA</a>
+            <div class="guide-nav-links">
+                <a class="guide-nav-link" href="/">Home</a>
+                <a class="guide-nav-link" href="/about">About</a>
+                <a class="guide-nav-link" href="/portfolio">Portfolio</a>
+                <a class="guide-nav-link" href="/readme">Readme</a>
+            </div>
+            <div class="guide-nav-actions">
+                <button id="clearBtn" class="guide-clear-btn" style="display:none;">
+                    <span class="material-symbols-outlined" style="font-size:15px;">delete</span>Clear
+                </button>
+                <button id="themeToggle" class="guide-theme-btn" aria-label="Toggle day/night mode">
+                    <span class="material-symbols-outlined" id="themeIcon">light_mode</span>
+                </button>
+            </div>
+            <button id="navMenuBtn" class="guide-hamburger" aria-label="Toggle Menu">
                 <span class="material-symbols-outlined" id="navMenuIcon">menu</span>
             </button>
-            <button id="clearBtn" class="clear-btn" style="display: none;">
-                <span class="material-symbols-outlined">delete</span>
-                <span>Clear</span>
-            </button>
         </div>
-    </header>
+        <div id="mobile-menu" class="guide-mobile-menu hidden">
+            <div class="guide-mobile-links">
+                <a href="/">Home</a>
+                <a href="/about">About Me</a>
+                <a href="/portfolio">Portfolio</a>
+                <a href="/readme">Readme</a>
+                <a href="/chat" class="active">Ask Chris</a>
+                <a href="/resume">Resume Guide</a>
+                <a href="/art">Art Guide</a>
+                <a href="/tanaga">Tanaga Guide</a>
+            </div>
+        </div>
+    </nav>
 
-    <main class="app-main">
+    <!-- ── Sidebar ──────────────────────────────────────────── -->
+    <aside class="guide-sidebar">
+        <div class="guide-sidebar-head">
+            <div class="guide-sidebar-title">Navigation</div>
+            <div class="guide-sidebar-sub">The Synthetic Pulse</div>
+        </div>
+        <nav class="guide-sidebar-nav">
+            <a class="guide-sidebar-link" href="/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+                Home
+            </a>
+            <a class="guide-sidebar-link" href="/about">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M20 21a8 8 0 1 0-16 0"></path></svg>
+                About Me
+            </a>
+            <a class="guide-sidebar-link" href="/portfolio">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path><rect width="20" height="14" x="2" y="6" rx="2"></rect></svg>
+                Portfolio
+            </a>
+            <a class="guide-sidebar-link" href="/readme">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                Readme
+            </a>
+            <a class="guide-sidebar-link" href="https://augmenthumankind.com" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                AI Art
+            </a>
+            <a class="guide-sidebar-link" href="https://fornesusart.com" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                "Real" Art
+            </a>
+            <div class="guide-sidebar-divider">Tools</div>
+            <a class="guide-sidebar-link active" href="/chat">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                Ask Chris
+            </a>
+            <a class="guide-sidebar-link" href="/resume">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                Resume Guide
+            </a>
+            <a class="guide-sidebar-link" href="/art">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path></svg>
+                Art Guide
+            </a>
+            <a class="guide-sidebar-link" href="/tanaga">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+                Tanaga Guide
+            </a>
+        </nav>
+        <div class="guide-sidebar-footer">
+            <a href="/about#contact" class="guide-sidebar-cta">Hire Me</a>
+        </div>
+    </aside>
 
-        <!-- ── Ask Chris Assistant Chat ──────────────────────────── -->
-        <section id="welcomeScreen" class="welcome-screen">
-            <h2 class="welcome-heading">Ask Chris Guide</h2>
-            <div class="welcome-body">
-                <p class="welcome-text">Hi, my name is Chris Fornesa and if you want someone at the intersections to help you innovate your business or nonprofit, I can help!</p>
-                <p class="welcome-text">Ask my chatbot anything you want about my education, experience, and projects.</p>
-                <p class="welcome-attribution">Powered by <a href="https://mistral.ai/news/mistral-small-4" target="_blank">Mistral Small 4</a>.</p>
+    <!-- ── Main Content ──────────────────────────────────────── -->
+    <main class="guide-main grid-bg">
+
+        <section class="guide-hero">
+            <div class="guide-hero-inner">
+                <h1 class="guide-hero-title">Ask Chris</h1>
+                <p class="guide-hero-subtitle">Chat with an AI assistant trained on my background, experience, and portfolio. Ask me anything.</p>
             </div>
         </section>
-        
-        <section class="home-chat-section">
-            <div class="section-label">
-                <span class="material-symbols-outlined section-label-icon">forum</span>
-                <span class="section-label-text">Ask Chris Guide</span>
-            </div>
 
-            <section class="chat-panel">
-                <div class="chat-panel-header">
-                    <div class="chat-avatar">
-                        <span class="material-symbols-outlined">smart_toy</span>
-                    </div>
-                    <div class="chat-identity">
-                        <p class="chat-name">Ask Chris Guide</p>
-                        <p class="chat-status">Ask me anything</p>
-                    </div>
-                </div>
+        <section class="guide-section">
+            <div class="guide-section-inner">
+                <section class="chat-panel glass-panel rounded-xl">
 
-                <!-- Welcome Screen inside chat -->
-                <div id="welcomeScreen" class="welcome-screen-chat">
-                    <div class="welcome-icon-sm">
-                        <span class="material-symbols-outlined">smart_toy</span>
-                    </div>
-                    <h2 class="welcome-title-sm">Ask Chris Assistant</h2>
-                    <p class="welcome-text">Ask me about the portfolio, the tools available, or anything else you'd like to know.</p>
-                    <p class="welcome-attribution" style="margin-top: 0.75rem;">Powered by <a href="https://mistral.ai/news/mistral-small-4" target="_blank">Mistral Small 4</a>.</p>
-                </div>
-
-                <div id="messagesContainer" class="messages-container"></div>
-
-                <div id="loadingIndicator" class="loading-indicator" style="display: none;">
-                    <div class="loading-pill">
-                        <div class="loading-dots">
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
+                    <div class="chat-panel-header">
+                        <div class="chat-avatar">
+                            <span class="material-symbols-outlined">smart_toy</span>
                         </div>
-                        <span class="loading-text">Thinking...</span>
+                        <div class="chat-identity">
+                            <p class="chat-name">Ask Chris</p>
+                            <p class="chat-status">Ask me anything</p>
+                        </div>
                     </div>
-                </div>
 
-                <div id="messagesEnd"></div>
+                    <div id="welcomeScreen" class="welcome-screen-chat">
+                        <div class="welcome-icon-sm">
+                            <span class="material-symbols-outlined">smart_toy</span>
+                        </div>
+                        <h2 class="welcome-title-sm">Ask Chris Assistant</h2>
+                        <p class="welcome-text">Hi, my name is Chris Fornesa. Ask my AI assistant anything about my education, experience, projects, or skills.</p>
+                        <p class="welcome-attribution" style="margin-top: 0.75rem;">Powered by <a href="https://mistral.ai/news/mistral-small-4" target="_blank">Mistral Small 4</a>.</p>
+                        <div class="welcome-chips">
+                            <span class="welcome-chip">Tell me about Chris</span>
+                            <span class="welcome-chip">What are his skills?</span>
+                            <span class="welcome-chip">Work experience?</span>
+                            <span class="welcome-chip">What projects has he built?</span>
+                        </div>
+                    </div>
 
-                <div class="chat-input-area">
-                    <form id="chatForm" class="chat-form">
-                        <textarea
-                            id="messageInput"
-                            class="message-textarea"
-                            placeholder="Ask about Chris..."
-                            rows="1"
-                        ></textarea>
-                        <button type="submit" id="sendButton" class="send-button" disabled>
-                            <svg id="sendIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="22" y1="2" x2="11" y2="13"></line>
-                                <polygon points="22,2 15,22 11,13 2,9 22,2"></polygon>
-                            </svg>
-                            <div id="loadingSpinner" class="btn-spinner" style="display: none;"></div>
-                        </button>
-                    </form>
-                    <p class="chat-footer-text">Ask Chris Assistant &bull; Powered by Mistral Small 4</p>
-                </div>
-            </section>
-        </section>
+                    <div id="messagesContainer" class="messages-container"></div>
 
+                    <div id="loadingIndicator" class="loading-indicator" style="display: none;">
+                        <div class="loading-pill">
+                            <div class="loading-dots">
+                                <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+                            </div>
+                            <span class="loading-text">Thinking&hellip;</span>
+                        </div>
+                    </div>
 
-        <!-- Empty hero section to match the layout of other pages -->
-        <section class="hero" style="margin-top: 3rem;">
-            <div class="hero-text">
-                <p class="hero-sub">&nbsp;</p>
+                    <div id="messagesEnd"></div>
+
+                    <div class="chat-input-area">
+                        <form id="chatForm" class="chat-form">
+                            <div class="input-row">
+                                <textarea id="messageInput" class="message-textarea" placeholder="Ask about Chris..." rows="1"></textarea>
+                                <button type="submit" id="sendButton" class="send-button" disabled>
+                                    <svg id="sendIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                                        <polygon points="22,2 15,22 11,13 2,9 22,2"></polygon>
+                                    </svg>
+                                    <div id="loadingSpinner" class="btn-spinner" style="display: none;"></div>
+                                </button>
+                            </div>
+                        </form>
+                        <p class="chat-footer-text">Ask Chris &bull; Powered by Mistral Small 4</p>
+                    </div>
+
+                </section>
             </div>
         </section>
 
-        
-        <!-- ── Hero ─────────────────────────────────────────────── -->
-        
-        <section class="hero">
-            <div class="hero-text">
-                <p class="hero-sub">Try out a few of the other AI-powered tools that I created using Mistral Small 4.</p>
-            </div>
-            <div class="tool-cards">
-
-                <a href="/resume" class="tool-card">
-                    <div class="tool-card-icon">
-                        <span class="material-symbols-outlined">description</span>
-                    </div>
-                    <div class="tool-card-body">
-                        <p class="tool-card-title">Resume Guide</p>
-                        <p class="tool-card-desc">Build a high-impact resume with AI, then refine it through conversation.</p>
-                    </div>
-                    <span class="tool-card-arrow material-symbols-outlined">arrow_forward</span>
-                </a>
-
-                <a href="/art" class="tool-card">
-                    <div class="tool-card-icon">
-                        <span class="material-symbols-outlined">palette</span>
-                    </div>
-                    <div class="tool-card-body">
-                        <p class="tool-card-title">Art Guide</p>
-                        <p class="tool-card-desc">Explore techniques, styles, and mediums with a studio-grade art assistant.</p>
-                    </div>
-                    <span class="tool-card-arrow material-symbols-outlined">arrow_forward</span>
-                </a>
-
-                <a href="/tanaga" class="tool-card">
-                    <div class="tool-card-icon">
-                        <span class="material-symbols-outlined">history_edu</span>
-                    </div>
-                    <div class="tool-card-body">
-                        <p class="tool-card-title">Tanaga Guide</p>
-                        <p class="tool-card-desc">Compose traditional Filipino Tanaga poetry with strict meter validation.</p>
-                    </div>
-                    <span class="tool-card-arrow material-symbols-outlined">arrow_forward</span>
-                </a>
-
+        <section class="guide-cards">
+            <div class="guide-cards-inner">
+                <p class="guide-cards-sub">Try out a few of the other AI-powered tools that I created using Mistral Small 4.</p>
+                <div class="tool-cards" id="toolCards">
+                    <a href="/resume" class="tool-card">
+                        <div class="tool-card-icon"><span class="material-symbols-outlined">description</span></div>
+                        <div class="tool-card-body">
+                            <p class="tool-card-title">Resume Guide</p>
+                            <p class="tool-card-desc">Build a high-impact resume with AI, then refine it through conversation.</p>
+                        </div>
+                        <span class="tool-card-arrow material-symbols-outlined">arrow_forward</span>
+                    </a>
+                    <a href="/art" class="tool-card">
+                        <div class="tool-card-icon"><span class="material-symbols-outlined">palette</span></div>
+                        <div class="tool-card-body">
+                            <p class="tool-card-title">Art Guide</p>
+                            <p class="tool-card-desc">Explore techniques, styles, and mediums with a studio-grade art assistant.</p>
+                        </div>
+                        <span class="tool-card-arrow material-symbols-outlined">arrow_forward</span>
+                    </a>
+                    <a href="/tanaga" class="tool-card">
+                        <div class="tool-card-icon"><span class="material-symbols-outlined">history_edu</span></div>
+                        <div class="tool-card-body">
+                            <p class="tool-card-title">Tanaga Guide</p>
+                            <p class="tool-card-desc">Compose traditional Filipino Tanaga poetry with strict meter validation.</p>
+                        </div>
+                        <span class="tool-card-arrow material-symbols-outlined">arrow_forward</span>
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -183,18 +226,19 @@
             var icon = document.getElementById('themeIcon');
             function applyTheme(theme) {
                 document.documentElement.setAttribute('data-theme', theme);
+                if (theme === 'dark') { document.documentElement.classList.add('dark'); }
+                else { document.documentElement.classList.remove('dark'); }
                 localStorage.setItem('theme', theme);
                 icon.textContent = theme === 'dark' ? 'dark_mode' : 'light_mode';
             }
             applyTheme(localStorage.getItem('theme') || 'light');
             btn.addEventListener('click', function() {
-                var current = document.documentElement.getAttribute('data-theme');
-                applyTheme(current === 'dark' ? 'light' : 'dark');
+                applyTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
             });
         })();
     </script>
-  <footer class="app-footer">
-    <a href="https://cfornesa.com">Chris Fornesa</a>. Copyright &copy; 2026.
-  </footer>
+    <footer class="app-footer">
+        <a href="https://cfornesa.com">Chris Fornesa</a>. Copyright &copy; 2026.
+    </footer>
 </body>
 </html>

@@ -130,7 +130,7 @@ agentic-tools/
 └── python-reference/
     ├── art/                    # Original FastAPI implementation (Art Inspiration Agent)
     ├── resume/                 # Original FastAPI implementation (Resume Agent)
-    └── tanaga/                 # Original FastAPI implementation (Tanaga Agent)
+    └── tanaga/                 # Original FastAPI implementation (Tanaga Guide)
 ```
 
 ---
@@ -260,4 +260,4 @@ npm start       # Runs the bundle with Node
 
 ## Python Reference
 
-The `python-reference/` directory contains the original standalone FastAPI implementations of the Art Inspiration Agent, Resume Agent, and Tanaga Agent. These are preserved for reference and are not part of the active application. The TypeScript implementations in `src/apps/` are functionally equivalent ports that share the unified RAG and Mistral infrastructure.
+The `python-reference/` directory contains the original standalone FastAPI implementations of the Art Inspiration Agent, Resume Agent, and Tanaga Guide. These are preserved for reference and are not part of the active application. The TypeScript implementations in `src/apps/` are functionally equivalent ports that share the unified RAG and Mistral infrastructure.

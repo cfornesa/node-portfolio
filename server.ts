@@ -16,7 +16,7 @@ async function main() {
     console.log(`  /chat         → Ask Chris`);
     console.log(`  /resume   → Resume Editor`);
     console.log(`  /art      → Art Inspiration Agent`);
-    console.log(`  /tanaga   → Tanaga Poetry Agent`);
+    console.log(`  /tanaga   → Tanaga Poetry Guide`);
   });
 
   warmup().catch((error) => {
