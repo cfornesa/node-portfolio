@@ -2102,6 +2102,52 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+.app-footer {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  font-size: .8125rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  border-top: 1px solid var(--outline-variant);
+  background: var(--background);
+}
+.app-footer--overlay {
+  padding-bottom: calc(10rem + env(safe-area-inset-bottom, 0px));
+}
+@media (max-width: 639px) {
+  .app-page-main {
+    padding-top: 4.5rem;
+  }
+  .app-page-first {
+    align-items: flex-start;
+    min-height: auto;
+    padding-top: 2rem;
+  }
+  .app-footer-prelude {
+    min-height: auto;
+    padding-bottom: 4rem;
+  }
+  .app-footer-prelude > div > p:last-child {
+    margin-bottom: 0;
+  }
+  .app-footer {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .app-footer--overlay {
+    padding-bottom: calc(11rem + env(safe-area-inset-bottom, 0px));
+  }
+}
+.app-footer a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.app-footer a:hover {
+  color: var(--primary);
+}
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;

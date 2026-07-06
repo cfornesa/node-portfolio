@@ -910,11 +910,45 @@ a:hover { opacity: 0.75; }
 /* Footer */
 .app-footer {
     text-align: center;
-    padding: 1.25rem 1.5rem;
+    padding: 2rem 1.5rem;
     font-size: 0.8125rem;
     color: var(--on-surface-variant);
     border-top: 1px solid var(--outline-variant);
     background: var(--surface);
+}
+
+.app-footer--overlay {
+    padding-bottom: calc(10rem + env(safe-area-inset-bottom, 0px));
+}
+
+@media (max-width: 639px) {
+    .app-page-main {
+        padding-top: 4.5rem;
+    }
+
+    .app-page-first {
+        align-items: flex-start;
+        min-height: auto;
+        padding-top: 2rem;
+    }
+
+    .app-footer-prelude {
+        min-height: auto;
+        padding-bottom: 4rem;
+    }
+
+    .app-footer-prelude > div > p:last-child {
+        margin-bottom: 0;
+    }
+
+    .app-footer {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .app-footer--overlay {
+        padding-bottom: calc(11rem + env(safe-area-inset-bottom, 0px));
+    }
 }
 
 .app-footer a {
@@ -925,4 +959,3 @@ a:hover { opacity: 0.75; }
 .app-footer a:hover {
     text-decoration: underline;
 }
-
