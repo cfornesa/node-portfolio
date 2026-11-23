@@ -258,6 +258,16 @@ npm start       # Runs the bundle with Node
 
 ---
 
+## Deployment
+
+The live site deploys from GitHub `main` through `.github/workflows/deploy.yml`, which uploads the site by FTP to Hostinger in `/public_html/`. The workflow uses the GitHub secret names `FTP_SERVER`, `FTP_USERNAME`, and `FTP_PASSWORD`.
+
+Each workflow run makes one deployment attempt. If a run fails because of a network or FTP reset, manually run the workflow with `workflow_dispatch`; that manual run is the retry.
+
+The same app serves [cfornesa.com](https://cfornesa.com) and [chris.com.ph](https://chris.com.ph). The `.replit` file in this repository is not the deployment path.
+
+---
+
 ## Python Reference
 
 The `python-reference/` directory contains the original standalone FastAPI implementations of the Art Inspiration Agent, Resume Agent, and Tanaga Guide. These are preserved for reference and are not part of the active application. The TypeScript implementations in `src/apps/` are functionally equivalent ports that share the unified RAG and Mistral infrastructure.
