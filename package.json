@@ -15,7 +15,8 @@
     "rag:index:resume": "tsx src/scripts/buildIndex.ts resume",
     "rag:index:art": "tsx src/scripts/buildIndex.ts art",
     "rag:index:tanaga": "tsx src/scripts/buildIndex.ts tanaga",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "modal:inject": "node scripts/inject-resume-modal.mjs"
   },
   "dependencies": {
     "cors": "^2.8.5",
