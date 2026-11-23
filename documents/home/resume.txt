@@ -17,6 +17,7 @@ Experience:
   - Network BI Analyst (2020)
 
 Skills:
+In Progress: Microsoft Go-To-Market Strategy Professional Certificate; IBM Full-Stack JavaScript Developer Professional Certificate; IBM AI Product Manager Professional Certificate; IBM Digital Marketing and Growth Hacking with GenAI Professional Certificate.
 - Python/Pandas/NumPy
 - R
 - SQL
