@@ -5,7 +5,7 @@ export const BLOG_FEED_URL =
   'https://blog.cfornesa.com/feeds/posts/default?alt=rss';
 
 const CACHE_TTL_MS = 15 * 60 * 1000;
-type BlogPost = { title: string; date: string; excerpt: string; url: string };
+export type BlogPost = { title: string; date: string; excerpt: string; url: string };
 let cachedPosts: BlogPost[] | undefined;
 let cacheExpiresAt = 0;
 let pendingFetch: Promise<BlogPost[]> | undefined;
@@ -60,7 +60,7 @@ function parseFeed(xml: string): BlogPost[] {
     .map(({ timestamp: _timestamp, ...post }) => post);
 }
 
-async function loadPosts(): Promise<BlogPost[]> {
+export async function loadBlogPosts(): Promise<BlogPost[]> {
   if (cachedPosts && Date.now() < cacheExpiresAt) return cachedPosts;
   if (!pendingFetch) {
     pendingFetch = (async () => {
@@ -83,6 +83,12 @@ function escapeHtml(value: string): string {
   return value.replace(/[&<>"']/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]!);
 }
 
+export function renderLatestPostSection(posts: BlogPost[]): string {
+  const post = posts[0];
+  if (!post) return '';
+  return `<section class="px-6 md:px-12 py-20" aria-labelledby="latest-working-log-heading"><div class="max-w-7xl mx-auto"><h2 class="text-4xl font-black mb-8" id="latest-working-log-heading">Latest from the Working Log</h2><article class="p-6 border border-outline/25 rounded-2xl bg-surface-container"><h3 class="text-2xl font-black mb-2"><a href="${escapeHtml(post.url)}">${escapeHtml(post.title)}</a></h3><p class="text-xs text-on-surface-variant mb-4">${escapeHtml(post.date)}</p><p>${escapeHtml(post.excerpt.slice(0, 200))}</p><p class="text-xs text-on-surface-variant mt-4 mb-2">From the Working Log blog</p><a class="text-xs font-black uppercase tracking-widest" href="${escapeHtml(post.url)}">Read on the blog</a></article><p class="mt-6"><a class="font-bold underline" href="/blog">All entries</a></p></div></section>`;
+}
+
 function renderPage(posts: BlogPost[]): string {
   const content = posts.length
     ? posts.map((post) => `<article class="blog-card"><h2><a href="${escapeHtml(post.url)}">${escapeHtml(post.title)}</a></h2><p class="blog-date">${escapeHtml(post.date)}</p><p>${escapeHtml(post.excerpt)}</p><p class="blog-source">From the Working Log blog</p><a class="blog-read" href="${escapeHtml(post.url)}">Read on the blog</a></article>`).join('\n')
@@ -91,10 +97,10 @@ function renderPage(posts: BlogPost[]): string {
   return `<!doctype html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Working Log</title><link rel="stylesheet" href="/assets/styles.css"><style>
 .blog-main{max-width:900px;margin:0 auto;padding:112px 24px 72px}.blog-heading{margin-bottom:36px}.blog-heading h1{font-size:clamp(2.5rem,6vw,4.5rem);font-weight:900;letter-spacing:-.05em;margin:0 0 12px}.blog-list{display:grid;gap:20px}.blog-card{padding:26px;border:1px solid rgba(128,128,128,.25);border-radius:16px;background:var(--color-surface-container,rgba(128,128,128,.06))}.blog-card h2{font-size:1.45rem;font-weight:800;margin:0 0 8px}.blog-card h2 a{color:inherit;text-decoration:none}.blog-card h2 a:hover,.blog-read:hover{color:var(--color-primary,#64748b)}.blog-date,.blog-source{font-size:.78rem;color:var(--color-on-surface-variant,#777)}.blog-date{margin:0 0 14px}.blog-card>p:not(.blog-date):not(.blog-source){line-height:1.7}.blog-source{margin:18px 0 8px}.blog-read{font-size:.8rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em}.blog-empty{padding:28px;border:1px solid rgba(128,128,128,.25);border-radius:16px}.blog-nav{position:fixed;z-index:50;top:0;width:100%;padding:18px 24px;background:rgba(128,128,128,.08);backdrop-filter:blur(16px);border-bottom:1px solid rgba(128,128,128,.18)}.blog-nav-inner{max-width:1200px;margin:auto;display:flex;justify-content:space-between;gap:20px;align-items:center}.blog-brand{font-weight:900;letter-spacing:-.04em;color:var(--color-primary,#64748b)}.blog-links{display:flex;gap:24px;flex-wrap:wrap}.blog-links a{color:inherit;text-decoration:none;font-weight:600}.blog-footer{text-align:center;padding:24px;color:var(--color-on-surface-variant,#777);font-size:.85rem}
-</style></head><body><nav class="blog-nav"><div class="blog-nav-inner"><a class="blog-brand" href="/">CHRIS FORNESA</a><div class="blog-links"><a href="/">Home</a><a href="/about">About</a><a href="/portfolio">Portfolio</a><a href="/readme">Readme</a><a href="/blog">Working Log</a></div></div></nav><main class="blog-main"><header class="blog-heading"><h1>Working Log</h1></header><section class="blog-list">${content}</section></main><footer class="blog-footer">&copy; 2026 Chris Fornesa. A <a href="https://creatrweb.com" target="_blank" rel="noopener">Creatrweb Site</a>.</footer></body></html>`;
+</style></head><body><nav class="blog-nav"><div class="blog-nav-inner"><a class="blog-brand" href="/">CHRIS FORNESA</a><div class="blog-links"><a href="/">Home</a><a href="/about">About</a><a href="/portfolio">Portfolio</a><a href="/readme">Readme</a><a href="/blog">Working Log</a></div></div></nav><main class="blog-main"><header class="blog-heading"><h1>Working Log</h1><p>One entry each Friday: what moved, what I decided, and what I checked.</p></header><section class="blog-list">${content}</section></main><footer class="blog-footer">&copy; 2026 Chris Fornesa. A <a href="https://creatrweb.com" target="_blank" rel="noopener">Creatrweb Site</a>.</footer></body></html>`;
 }
 
 export const blogRouter = Router();
 blogRouter.get('/', async (_req, res) => {
-  res.type('html').status(200).send(renderPage(await loadPosts()));
+  res.type('html').status(200).send(renderPage(await loadBlogPosts()));
 });

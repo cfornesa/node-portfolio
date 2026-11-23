@@ -43,6 +43,7 @@ export async function createApp() {
   app.use('/about', express.static(path.join(publicDir, 'about')));
   app.use('/portfolio', express.static(path.join(publicDir, 'portfolio')));
   app.use('/portfolio/files', express.static(path.join(process.cwd(), 'portfolio')));
+  app.use('/', homeRouter);          // Home page and API routes
   // Home page and shared assets
   app.use(express.static(publicDir));
 
@@ -56,7 +57,6 @@ export async function createApp() {
   });
 
   // ── API Routes ────────────────────────────────────────────────────
-  app.use('/', homeRouter);          // POST /chat, GET /rag/status, POST /rag/reindex
   app.use('/resume', resumeRouter);  // POST /resume/build, /resume/chat, /resume/rag/*
   app.use('/art', artRouter);        // POST /art/chat, /art/rag/*
   app.use('/tanaga', tanagaRouter);  // POST /tanaga/generate, /tanaga/rag/*
