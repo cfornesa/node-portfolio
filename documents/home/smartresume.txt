@@ -1,8 +1,11 @@
 ﻿Christopher Fornesa   
- cfornes@wgu.edu  346-762-3020  Houston, TX 
+ cfornes@wgu.edu  346-762-3020  Sugar Land, TX
 Professional Summary 
 Data and analytics professional with over five years of experience leveraging data to drive strategic decision making. Proficient in quantitative analysis and skilled in transforming complex data into valuable insights. Demonstrated ability to effectively manage large datasets and drive solutions to complex problems. Strong commitment to ethical, data-driven decision-making to support organizational goals and initiatives. 
-Experience 
+Experience
+Learning Facilitator | Boston University · Faculty of Computing & Data Sciences | 2026 – Present
+Main academic touchpoint for students in the MS in Data Science & AI program; graded 400+ students across 2 courses, with detailed feedback against faculty rubrics.
+Course delivery, office hours, and discussion support.
 Chevron | Mobile Data SME May 2024 to July 2025 ONSITE REMOTE FULL-TIME 
 Developed data solutions analyzing 60,000+ records to identify inactive lines to lower costs. Built 30+ Power BI dashboards to improve decision speed by 60% and cut costs. 
 Managed GETS/WPS data to ensure uptime for emergent situations like Hurricane Beryl. Identified 1,000+ inactive GETS/WPS users through analysis, eliminating security risks. Optimized SharePoint architecture, reducing storage needs by 20% through folder removals. Drafted documentation for automating processes and creating SharePoint resources. 
@@ -84,3 +87,7 @@ Earned a 4.0 GPA upon graduation from Houston Community College/Houston City Col
 Call to Action for Verification   
 This SmartResume® contains digital badge credentials that can be verified with the institutional issuer(s) in real time. Scan QR code or click here to view this SmartResume® in verifiable form 
 Awarded: May 2015
+Projects
+AugmentrART | An interactive AI art platform built around human creative control and data sovereignty.
+My Own Making | A problem-discovery tool: a staged AI pipeline turns a founder's context into a saved set of problems, directions, and deliverables with sources.
+Augment Humankind | Creative AI pieces and experiments on augmenting human creativity with AI.

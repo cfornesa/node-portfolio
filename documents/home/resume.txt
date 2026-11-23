@@ -1,5 +1,5 @@
 Christopher Fornesa ("Chris") - Data & Analytics Professional
-Location: Houston, TX
+Location: Sugar Land, TX
 Contact: (281) 400-1920, linkedin.com/in/cfornesa
 
 Education:
@@ -8,6 +8,9 @@ Education:
 - AA Liberal Arts (HCC, 2015, 3.949)
 
 Experience:
+- Learning Facilitator, Boston University · Faculty of Computing & Data Sciences (2026–Present)
+  - Main academic touchpoint for students in the MS in Data Science & AI program; graded 400+ students across 2 courses, with detailed feedback against faculty rubrics.
+  - Course delivery, office hours, and discussion support.
 - 5 years at Chevron:
   - Mobile Data SME (2024-2025)
   - IT Analyst (2020-2024)
@@ -22,6 +25,9 @@ Skills:
 - SharePoint
 
 Projects:
+- AugmentrART: An interactive AI art platform built around human creative control and data sovereignty.
+- My Own Making: A problem-discovery tool: a staged AI pipeline turns a founder's context into a saved set of problems, directions, and deliverables with sources.
+- Augment Humankind: Creative AI pieces and experiments on augmenting human creativity with AI.
 - AI Resume Agent
 - Hate Speech Detection
 - Algorithmic Bias Policy
