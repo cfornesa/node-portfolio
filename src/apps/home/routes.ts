@@ -1,6 +1,8 @@
 import { Router } from 'express';
+import { readFile } from 'node:fs/promises';
 import { z } from 'zod';
 import { handleHomeChat, homeRag } from './home';
+import { loadBlogPosts, renderLatestPostSection } from '../blog/routes';
 
 const chatSchema = z.object({
   message: z.string().min(1),
@@ -10,6 +12,12 @@ const chatSchema = z.object({
 });
 
 export const homeRouter = Router();
+
+homeRouter.get('/', async (_req, res) => {
+  const page = await readFile('public/index.html', 'utf8');
+  const latestSection = renderLatestPostSection(await loadBlogPosts());
+  res.type('html').status(200).send(page.replace('<section\n      id="contact"', `${latestSection}\n    <section\n      id="contact"`));
+});
 
 homeRouter.post('/chat', async (req, res) => {
   const parsed = chatSchema.safeParse(req.body);
