@@ -9,6 +9,7 @@ import { homeRag } from './apps/home/home';
 import { resumeRag } from './apps/resume/resume';
 import { artRag } from './apps/art/art';
 import { tanagaRag } from './apps/tanaga/tanaga';
+import { blogRouter } from './apps/blog/routes';
 
 const publicDir = path.join(process.cwd(), 'public');
 
@@ -30,6 +31,9 @@ export async function createApp() {
 
   app.use(express.json({ limit: '2mb' }));
   app.use(express.urlencoded({ extended: true }));
+
+  // ── Server-rendered Working Log ──────────────────────────────────
+  app.use('/blog', blogRouter);
 
   // ── Sub-app static files served at their path prefix ──────────────
   app.use('/resume', express.static(path.join(publicDir, 'resume')));
