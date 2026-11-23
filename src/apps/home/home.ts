@@ -8,6 +8,7 @@ import { getEnv } from '../../env';
 export const homeRag = new RagService({
   indexPath: 'data/home/rag-index.json',
   documentsDir: 'documents/home',
+  topK: 8,
 });
 
 export async function handleHomeChat(
