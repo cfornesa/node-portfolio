@@ -261,6 +261,21 @@
             <img class="block w-full h-auto" src="/assets/turning-forms.jpg" alt="Turning Forms, a 3D piece on AugmentrART, showing a yellow cone, a teal cube, and a coral sphere on a pale stage.">
             <figcaption class="mt-3 text-sm font-bold uppercase tracking-tight">Turning Forms, a live 3D piece on AugmentrART. A yellow cone, a teal cube, and a coral sphere on a pale stage; the cube turns and the sphere slides while the scene runs.</figcaption>
           </figure>
+          <section class="space-y-3">
+            <details class="brutal-border p-4 bg-surface">
+              <summary class="text-2xl font-black uppercase tracking-tight text-on-surface cursor-pointer">Architecture</summary>
+              <img class="block w-full max-w-[520px] h-auto mt-4" src="/assets/augmentrart-architecture.svg" alt="The visitor's browser loads the app from Appwrite Sites. TablesDB holds the pieces, profiles, and run records. Functions run the server work and call Mistral AI, which helps makers build interactive worlds that people can step into. Stripe subscriptions are designed and not yet launched.">
+              <p class="mt-4">The platform runs on Appwrite as its only backend: Sites serves the app, TablesDB holds the data, and Functions carry the server work. Each AI run writes a diagnostics record, so I can read what a run did after the fact. Pieces render in the visitor's browser, in three.js for 3D scenes and p5 for 2D scenes, so a published piece runs on the reader's machine and not on a render server. Mistral models do the AI work inside the runs, and Stripe is the chosen payment provider, with the subscription tiers designed and in preparation, not yet launched.</p>
+            </details>
+            <details class="brutal-border p-4 bg-surface">
+              <summary class="text-2xl font-black uppercase tracking-tight text-on-surface cursor-pointer">Design and taste</summary>
+              <p class="mt-4">The frame stays quiet so the work carries the color: a night field, plain cards, and each piece title set in a script face. Every piece carries a plain-word description of what it shows, written for visitors who cannot see the canvas, and pieces can be reordered from the keyboard. The deeper choice is structural. A maker's profile, pieces, and data stay the maker's own, and publishing happens on the maker's terms, because I designed the platform around data sovereignty rather than adding it later.</p>
+            </details>
+            <details class="brutal-border p-4 bg-surface">
+              <summary class="text-2xl font-black uppercase tracking-tight text-on-surface cursor-pointer">AI tools and my direction</summary>
+              <p class="mt-4">I direct the build in lanes. Claude Code holds the planning, the design, the architecture, and the written record, including the decision records that govern the build. Codex implements in its own branch, one lane at a time, and merges only after my sign-off. Nothing reaches production on a runner's word: I check the branch, the file list, and the live build myself, and a lane closes only when its issues close. The documents and the code grow together, and a ruling lands in the record when it is made.</p>
+            </details>
+          </section>
           <section>
             <h2 class="text-2xl font-black uppercase tracking-tight text-on-surface mb-3">Stack</h2>
             <p>TypeScript, Appwrite (Sites, TablesDB, and Functions), Mistral AI, Stripe subscriptions.</p>

@@ -263,6 +263,21 @@
             </video>
             <figcaption class="mt-3 text-sm font-bold uppercase tracking-tight">Beating HeART, an interactive A-Frame piece on Augment Humankind. Demo video, 11 seconds.</figcaption>
           </figure>
+          <section class="space-y-3">
+            <details class="brutal-border p-4 bg-surface">
+              <summary class="text-2xl font-black uppercase tracking-tight text-on-surface cursor-pointer">Architecture</summary>
+              <img class="block w-full max-w-[520px] h-auto mt-4" src="/assets/augment-humankind-architecture.svg" alt="The creator directs each piece by prompt. Wrong pieces are regenerated and close pieces get targeted changes, until a piece is right. Finished pieces are shown standalone on their own pages, in galleries as sections a visitor browses, and in collections as a Three.js wall, where the visitor sees them.">
+              <p class="mt-4">The site is a static build with no backend, no account system, and no database. TypeScript and React compile through Vite into plain files, Replit serves them, and each piece runs in the visitor's browser. The immersive pieces use A-Frame, so a scene loads as a web page and needs no install and no app store. A piece is a page, and visiting it asks nothing of the visitor.</p>
+            </details>
+            <details class="brutal-border p-4 bg-surface">
+              <summary class="text-2xl font-black uppercase tracking-tight text-on-surface cursor-pointer">Design and taste</summary>
+              <p class="mt-4">The frame is quiet here as well: a script title, a short line, and then the piece itself at full size. Each piece tests one idea and stops there, instead of growing into a product surface. The human stays the author and the AI stays the instrument, and the pieces are studies in that arrangement: what a person can make when the machine handles the rendering and the person keeps the decisions.</p>
+            </details>
+            <details class="brutal-border p-4 bg-surface">
+              <summary class="text-2xl font-black uppercase tracking-tight text-on-surface cursor-pointer">AI tools and my direction</summary>
+              <p class="mt-4">The pieces were built with agentic coding tools under my direction. I choose the subject, the motion, and the framing, and I accept or reject what the tools produce. Beating HeART holds one example. The piece's own pulse grows too wide for a portrait frame, so the demo video on this page uses a gentler pulse that I set by hand for the recording. The piece itself is unchanged.</p>
+            </details>
+          </section>
           <section>
             <h2 class="text-2xl font-black uppercase tracking-tight text-on-surface mb-3">Stack</h2>
             <p>TypeScript and React, built with Vite, deployed on Replit. The pieces run in the browser.</p>

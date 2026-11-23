@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 654" width="480" height="654" role="img">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#141414"/></marker></defs>
+<rect x="10" y="16" width="460" height="62" fill="#ffffff" stroke="#141414" stroke-width="2.5"/>
+<text x="240" y="43" text-anchor="middle" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#141414">Prompting</text>
+<text x="240" y="64" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13.5" fill="#4a4a4a">The creator directs each piece by prompt</text>
+<line x1="240" y1="80" x2="240" y2="111" stroke="#141414" stroke-width="2" marker-end="url(#ah)"/>
+<text x="250" y="100" font-family="system-ui, sans-serif" font-size="12.5" font-style="italic" fill="#4a4a4a">generates</text>
+<rect x="10" y="114" width="460" height="62" fill="#ffffff" stroke="#141414" stroke-width="2.5"/>
+<text x="240" y="141" text-anchor="middle" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#141414">A generated piece</text>
+<text x="240" y="162" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13.5" fill="#4a4a4a">Draft art from the AI tools</text>
+<line x1="240" y1="178" x2="240" y2="209" stroke="#141414" stroke-width="2" marker-end="url(#ah)"/>
+<text x="250" y="198" font-family="system-ui, sans-serif" font-size="12.5" font-style="italic" fill="#4a4a4a">the creator reviews it</text>
+<rect x="10" y="212" width="460" height="62" fill="#ffffff" stroke="#141414" stroke-width="2.5"/>
+<text x="240" y="239" text-anchor="middle" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#141414">Review and refine</text>
+<text x="240" y="260" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13.5" fill="#4a4a4a">Wrong pieces regenerate; close pieces get targeted changes</text>
+<line x1="240" y1="276" x2="240" y2="307" stroke="#141414" stroke-width="2" marker-end="url(#ah)"/>
+<text x="250" y="296" font-family="system-ui, sans-serif" font-size="12.5" font-style="italic" fill="#4a4a4a">accepted pieces become</text>
+<rect x="10" y="310" width="460" height="62" fill="#ffffff" stroke="#141414" stroke-width="2.5"/>
+<text x="240" y="337" text-anchor="middle" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#141414">Art pieces</text>
+<text x="240" y="358" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13.5" fill="#4a4a4a">Accepted, finished, and ready to show</text>
+<line x1="240" y1="374" x2="240" y2="405" stroke="#141414" stroke-width="2" marker-end="url(#ah)"/>
+<text x="250" y="394" font-family="system-ui, sans-serif" font-size="12.5" font-style="italic" fill="#4a4a4a">shown in three ways</text>
+<rect x="10" y="408" width="146" height="62" fill="#ffffff" stroke="#141414" stroke-width="2.5"/>
+<text x="83" y="435" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#141414">Standalone</text>
+<text x="83" y="456" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11.5" fill="#4a4a4a">On its own page</text>
+<rect x="167" y="408" width="146" height="62" fill="#ffffff" stroke="#141414" stroke-width="2.5"/>
+<text x="240" y="435" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#141414">Galleries</text>
+<text x="240" y="456" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11.5" fill="#4a4a4a">Browsable sections</text>
+<rect x="324" y="408" width="146" height="62" fill="#ffffff" stroke="#141414" stroke-width="2.5"/>
+<text x="397" y="435" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#141414">Collections</text>
+<text x="397" y="456" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11.5" fill="#4a4a4a">A set on a 3D wall</text>
+<line x1="83" y1="472" x2="83" y2="503" stroke="#141414" stroke-width="2" marker-end="url(#ah)"/>
+<line x1="240" y1="472" x2="240" y2="503" stroke="#141414" stroke-width="2" marker-end="url(#ah)"/>
+<line x1="397" y1="472" x2="397" y2="503" stroke="#141414" stroke-width="2" marker-end="url(#ah)"/>
+<text x="250" y="492" font-family="system-ui, sans-serif" font-size="12.5" font-style="italic" fill="#4a4a4a">the visitor sees</text>
+<rect x="10" y="506" width="460" height="62" fill="#ffffff" stroke="#141414" stroke-width="2.5"/>
+<text x="240" y="533" text-anchor="middle" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#141414">The visitor sees the pieces</text>
+<text x="240" y="554" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13.5" fill="#4a4a4a">Standalone, in a gallery section, or on a collection wall</text>
+<text x="240" y="582" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#141414">The loop runs until a piece is right: prompt, generate, review, refine.</text>
+<text x="240" y="604" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#141414">Built with TypeScript and React, served by Replit as static files.</text>
+</svg>
